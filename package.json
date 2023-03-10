@@ -10,15 +10,22 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@prisma/client": "^4.9.0",
+    "@react-three/drei": "^9.57.1",
+    "@react-three/fiber": "^8.12.0",
     "@tanstack/react-query": "^4.20.2",
     "@trpc/client": "^10.9.0",
     "@trpc/next": "^10.9.0",
     "@trpc/react-query": "^10.9.0",
     "@trpc/server": "^10.9.0",
+    "framer-motion": "^10.2.3",
+    "maath": "^0.5.2",
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-parallax-tilt": "^1.7.112",
+    "react-vertical-timeline-component": "^3.6.0",
     "superjson": "1.9.1",
     "zod": "^3.20.2"
   },
