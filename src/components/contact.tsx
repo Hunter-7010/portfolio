@@ -14,8 +14,8 @@ const Contact = () => {
     message: "",
   });
   const [loading, setLoading] = useState(false);
-  const handleChange = (e: ChangeEvent) => {};
-  const handleSubmit = (e: SubmitEvent) => {};
+  const handleChange = (e: ChangeEvent) => {console.log("hi")};
+  const handleSubmit = (e: SubmitEvent) => {console.log("hi")};
   return (
     <section className="flex flex-col-reverse py-6 lg:flex-row">
       <motion.div
