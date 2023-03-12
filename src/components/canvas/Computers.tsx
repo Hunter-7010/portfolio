@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, { Suspense,  useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Preload, useGLTF, Stage,OrbitControls } from "@react-three/drei";
