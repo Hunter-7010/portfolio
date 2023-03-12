@@ -3,13 +3,13 @@ import Head from "next/head";
 import Navbar from "../components/navbar";
 import Hero from "../components/hero";
 import About from "../components/about";
-import { api } from "../utils/api";
+// import { api } from "../utils/api";
 import Experience from "../components/Experience";
 import Projects from "../components/projects";
 import Contact from "../components/contact";
 
 const Home: NextPage = () => {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
+  // const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
   return (
     <>
