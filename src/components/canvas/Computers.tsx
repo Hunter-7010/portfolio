@@ -61,7 +61,7 @@ const ComputersCanvas = () => {
 
   return (
     <section>
-      {/* <Canvas
+      <Canvas
         frameloop="demand"
         shadows
         dpr={[1, 2]}
@@ -81,7 +81,7 @@ const ComputersCanvas = () => {
         </Suspense>
 
         <Preload all />
-      </Canvas> */}
+      </Canvas>
 
       <div className="absolute bottom-12 flex w-full items-center justify-center">
         <a href="#about">
