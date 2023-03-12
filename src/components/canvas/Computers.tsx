@@ -62,27 +62,27 @@ const ComputersCanvas = () => {
   return (
     <section >
       {/* <Canvas
-        // frameloop="demand"
+        frameloop="demand"
         shadows
         dpr={[1, 2]}
         camera={{ fov: 45 }}
         gl={{ preserveDrawingBuffer: true }}
       
-        // style={{ height: "500px" }}
+        style={{ height: "700px" }}
       >
         <Suspense fallback={<CanvasLoader />}>
 
 
           <PresentationControls speed={1.5} global polar={[-0.1, Math.PI / 4]}>
-            <Stage environment="apartment">
+            <Stage >
               <Computers isMobile={isMobile} />
             </Stage>
           </PresentationControls>
         </Suspense>
 
         <Preload all />
-      </Canvas>
-       */}
+      </Canvas> */}
+      
       <div className="absolute flex w-full items-center justify-center bottom-12">
         <a href="#about">
           <div className="flex h-[64px] w-[35px] rounded-3xl border-4 border-white p-2">

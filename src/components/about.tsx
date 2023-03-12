@@ -22,9 +22,9 @@ const About = () => {
         the boundaries of what is possible.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
-        <Tilt gyroscope={true} className="m-2 w-full sm:w-[250px]">
+        <Tilt  className="m-2 w-full sm:w-[250px]">
           <motion.div
-            variants={fadeIn("right", "spring", 0.5 * 0,7)}
+            variants={fadeIn("right", "spring", 0.5 * 0,2.5)}
             className="animate-border rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
           >
             <div className="flex min-h-[280px] flex-col items-center justify-evenly rounded-[10px] p-4 sm:p-6">
@@ -33,9 +33,9 @@ const About = () => {
             </div>
           </motion.div>
         </Tilt>
-        <Tilt gyroscope={true} className="m-2 w-full sm:w-[250px]">
+        <Tilt  className="m-2 w-full sm:w-[250px]">
           <motion.div
-            variants={fadeIn("right", "spring", 0.5 * 1,7)}
+            variants={fadeIn("right", "spring", 0.5 * 1,2.5)}
             className="animate-border rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
           >
             <div className="flex min-h-[280px] flex-col items-center justify-evenly rounded-[10px] p-4 sm:p-6">
@@ -44,9 +44,9 @@ const About = () => {
             </div>
           </motion.div>
         </Tilt>
-        <Tilt gyroscope={true} className="m-2 w-full sm:w-[250px]">
+        <Tilt  className="m-2 w-full sm:w-[250px]">
           <motion.div
-            variants={fadeIn("right", "spring", 0.5 * 2,7)}
+            variants={fadeIn("right", "spring", 0.5 * 2,2.5)}
             className="animate-border rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
           >
             <div className="flex min-h-[280px] flex-col items-center justify-evenly rounded-[10px] p-4 sm:p-6">
