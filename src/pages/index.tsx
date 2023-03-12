@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       </Head>
       <section className="relative bg-gradient-to-t from-[#101212] to-[#08201D] text-white overflow-hidden dark">
         <Navbar />
-        <Hero/>
+        {/* <Hero/> */}
         <About/>
         <Experience/>
         <Projects/>
