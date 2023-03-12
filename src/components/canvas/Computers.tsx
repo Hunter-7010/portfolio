@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 import CanvasLoader from "../Loader";
 
-const Computers = React.memo(({ isMobile }: { isMobile: boolean }) => {
+const Computers = React.memo(() => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
   return (
@@ -67,7 +67,7 @@ const ComputersCanvas = () => {
 
    
             <Stage environment="apartment">
-              <Computers isMobile={isMobile} />
+              <Computers />
               <OrbitControls enableZoom={false} />
             </Stage>
           
