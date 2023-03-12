@@ -1,16 +1,11 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense,  useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import {
-  Preload,
-  useGLTF,
-  PresentationControls,
-  Stage,
-} from "@react-three/drei";
-
-import CanvasLoader from "../Loader";
+import { Preload, useGLTF, Stage,OrbitControls } from "@react-three/drei";
 import { motion } from "framer-motion";
 
-const Computers = ({ isMobile }: { isMobile: boolean }) => {
+import CanvasLoader from "../Loader";
+
+const Computers = React.memo(({ isMobile }: { isMobile: boolean }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
   return (
@@ -33,7 +28,7 @@ const Computers = ({ isMobile }: { isMobile: boolean }) => {
       />
     </mesh>
   );
-};
+});
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -53,7 +48,7 @@ const ComputersCanvas = () => {
     // Add the callback function as a listener for changes to the media query
     mediaQuery.addEventListener("change", handleMediaQueryChange);
 
-    // Remove the listener when the component is unmounted
+    // Remove the listener when the component is unmounted [0.5]
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
@@ -64,44 +59,44 @@ const ComputersCanvas = () => {
       <Canvas
         frameloop="demand"
         shadows
-        dpr={[1, 2]}
+        dpr={0.5} 
         camera={{ fov: 45 }}
-        gl={{ preserveDrawingBuffer: true }}
-      
         style={{ height: "700px" }}
       >
         <Suspense fallback={<CanvasLoader />}>
 
-
-          <PresentationControls speed={1.5} global polar={[-0.1, Math.PI / 4]}>
-            <Stage >
+   
+            <Stage environment="apartment">
               <Computers isMobile={isMobile} />
+              <OrbitControls enableZoom={false} />
             </Stage>
-          </PresentationControls>
+          
         </Suspense>
 
         <Preload all />
       </Canvas>
 
-      <div className="absolute bottom-12 flex w-full items-center justify-center">
-        <a href="#about">
-          <div className="flex h-[64px] w-[35px] rounded-3xl border-4 border-white p-2">
-            <motion.div
-              animate={{
-                y: [0, 33, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className="mb-1 h-3 w-3 rounded-full bg-white"
-            ></motion.div>
-          </div>
-        </a>
-      </div>
+<div className="absolute bottom-12 flex w-full items-center justify-center">
+  <a href="#about">
+    <div className="flex h-[64px] w-[35px] rounded-3xl border-4 border-white p-2">
+      <motion.div
+        animate={{
+          y: [0, 33, 0],
+        }}
+        transition={{
+          duration: 1.5,
+          repeat: Infinity,
+          repeatType: "loop",
+        }}
+        className="mb-1 h-3 w-3 rounded-full bg-white"
+      ></motion.div>
+    </div>
+  </a>
+</div>
     </section>
   );
 };
+
+
 
 export default ComputersCanvas;

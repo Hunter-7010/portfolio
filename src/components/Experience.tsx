@@ -59,7 +59,7 @@ const Experience = () => {
         <h2 className="text-5xl font-black">Work Experience.</h2>
       </motion.div>
 
-      <div className="mt-20 flex flex-col">
+      <div className="mt-20 flex flex-col min-h-screen">
         <VerticalTimeline>
           <ExperienceCard key={`experience-1`} />
           <ExperienceCard key={`experience-1`} />
@@ -69,4 +69,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "experience");

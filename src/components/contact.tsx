@@ -17,7 +17,7 @@ const Contact = () => {
   const handleChange = (e: ChangeEvent) => {console.log("hi")};
   const handleSubmit = (e: SubmitEvent) => {console.log("hi")};
   return (
-    <section className="flex flex-col-reverse py-6 lg:flex-row">
+    <section className="flex flex-col-reverse py-6 min-h-screen lg:flex-row">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="mx-0 rounded-2xl border py-8 px-4 dark:bg-gradient-to-l dark:from-[#101212] dark:to-[#08201D] md:m-0 lg:w-[448px] lg:py-16"

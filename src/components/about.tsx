@@ -4,7 +4,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import StarWrapper from "../hoc/SectionWrapper";
 const About = () => {
   return (
-    <section className="px-2 text-white" id="about">
+    <section className="px-2 text-white min-h-screen" id="about">
       <motion.div variants={textVariant(0)}>
         <p className="opacity-70">Introduction</p>
         <h2 className="text-5xl font-black">Overview.</h2>
@@ -24,7 +24,7 @@ const About = () => {
       <div className="mt-20 flex flex-wrap gap-10">
         <Tilt  className="m-2 w-full sm:w-[250px]">
           <motion.div
-            variants={fadeIn("right", "spring", 0.5 * 0,2.5)}
+            variants={fadeIn("right", "spring", 0.5 * 0,0.75)}
             className="animate-border rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
           >
             <div className="flex min-h-[280px] flex-col items-center justify-evenly rounded-[10px] p-4 sm:p-6">
@@ -35,7 +35,7 @@ const About = () => {
         </Tilt>
         <Tilt  className="m-2 w-full sm:w-[250px]">
           <motion.div
-            variants={fadeIn("right", "spring", 0.5 * 1,2.5)}
+            variants={fadeIn("right", "spring", 0.5 * 1,0.75)}
             className="animate-border rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
           >
             <div className="flex min-h-[280px] flex-col items-center justify-evenly rounded-[10px] p-4 sm:p-6">
@@ -46,7 +46,7 @@ const About = () => {
         </Tilt>
         <Tilt  className="m-2 w-full sm:w-[250px]">
           <motion.div
-            variants={fadeIn("right", "spring", 0.5 * 2,2.5)}
+            variants={fadeIn("right", "spring", 0.5 * 2,0.75)}
             className="animate-border rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
           >
             <div className="flex min-h-[280px] flex-col items-center justify-evenly rounded-[10px] p-4 sm:p-6">

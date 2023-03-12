@@ -5,7 +5,7 @@ import { SectionWrapper } from "../hoc";
 
 const Projects = () => {
   return (
-    <section className="p-2">
+    <section className="p-2 min-h-screen">
       <motion.div variants={textVariant(0)}>
         <h2 className="text-5xl font-black">Projects.</h2>
       </motion.div>
