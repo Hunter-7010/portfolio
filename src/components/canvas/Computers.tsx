@@ -46,7 +46,7 @@ const ComputersCanvas = () => {
     setIsMobile(mediaQuery.matches);
 
     // Define a callback function to handle changes to the media query
-    const handleMediaQueryChange = (event: any) => {
+    const handleMediaQueryChange = (event: MediaQueryListEvent) => {
       setIsMobile(event.matches);
     };
 
@@ -60,7 +60,7 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <section >
+    <section>
       {/* <Canvas
         frameloop="demand"
         shadows
@@ -82,8 +82,8 @@ const ComputersCanvas = () => {
 
         <Preload all />
       </Canvas> */}
-      
-      <div className="absolute flex w-full items-center justify-center bottom-12">
+
+      <div className="absolute bottom-12 flex w-full items-center justify-center">
         <a href="#about">
           <div className="flex h-[64px] w-[35px] rounded-3xl border-4 border-white p-2">
             <motion.div
