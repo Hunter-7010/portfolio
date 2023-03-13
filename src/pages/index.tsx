@@ -9,6 +9,7 @@ import Projects from "../components/projects";
 import Contact from "../components/contact";
 import TawkTo from "../components/Tawk";
 import Skills from "../components/skills";
+import Footer from "../components/footer";
 
 const Home: NextPage = () => {
   // const hello = api.example.hello.useQuery({ text: "from tRPC" });
@@ -34,6 +35,7 @@ const Home: NextPage = () => {
         <Skills />
         <Projects />
         <Contact />
+        <Footer/>
         <TawkTo />
       </section>
     </>
