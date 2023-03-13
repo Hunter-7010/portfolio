@@ -17,18 +17,24 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Zaki Orya</title>
-        <meta name="description" content="Zaki Orya's Portofolio" />
+        <meta name="description" content="Zaki Orya's Portofolio" key="desc" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta
+          name="description"
+          content="This Portofolio is created using nextjs, react three fiber, three.js, framer motion and tailwind"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="relative scroll-smooth bg-gradient-to-t from-[#101212] to-[#08201D] text-white overflow-hidden dark">
+      <section className="dark relative overflow-hidden scroll-smooth bg-gradient-to-t from-[#101212] to-[#08201D] text-white">
         <Navbar />
-        <Hero/>
-        <About/>
-        <Experience/>
-        <Skills/>
-        <Projects/>
-        <Contact/>
-        <TawkTo/>
+        <Hero />
+        <About />
+        <Experience />
+        <Skills />
+        <Projects />
+        <Contact />
+        <TawkTo />
       </section>
     </>
   );

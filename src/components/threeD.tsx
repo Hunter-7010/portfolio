@@ -60,12 +60,12 @@ export default function ThreeD() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-[45rem] transform overflow-hidden rounded-2xl p-6 text-left align-middle shadow-xl transition-all dark:bg-gradient-to-l dark:from-[#101212] dark:to-[#08201D]">
+                <Dialog.Panel className="w-[45rem] transform overflow-hidden rounded-2xl p-6 text-left align-middle shadow-xl transition-all dark:bg-[#101212]">
                   <Dialog.Title
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    {/* Payment successful */}
+                    3D Model
                   </Dialog.Title>
                   <ComputersCanvas />
                   <div className="mt-4">
