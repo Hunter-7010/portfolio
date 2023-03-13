@@ -59,8 +59,8 @@ const Contact = () => {
           Contact Me
         </h2>
         <p className="mb-8 text-center font-light text-gray-500 dark:text-gray-400 sm:text-xl lg:mb-16">
-          Don't hesitate to reach out - whether it's for a potential
-          collaboration, to discuss a job opportunity, or just to say hello, I'm
+          Don&apos;t hesitate to reach out - whether it&apos;s for a potential
+          collaboration, to discuss a job opportunity, or just to say hello, I&apos;m
           always happy to connect.
         </p>
         <form onSubmit={handleSubmit} className="space-y-8">
