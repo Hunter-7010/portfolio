@@ -1,13 +1,12 @@
 /* eslint-disable */
 
-import React, { Suspense,  useEffect, useState } from "react";
+import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Preload, useGLTF, Stage,OrbitControls } from "@react-three/drei";
-import { motion } from "framer-motion";
+import { Preload, useGLTF, Stage, OrbitControls } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Computers = React.memo(() => {
+const Computers = () => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
   return (
@@ -30,54 +29,30 @@ const Computers = React.memo(() => {
       />
     </mesh>
   );
-});
+};
 
 const ComputersCanvas = () => {
- 
-
   return (
     <section>
       <Canvas
         frameloop="demand"
         shadows
-        dpr={0.5} 
+        dpr={[1, 2]}
         camera={{ fov: 45 }}
-        style={{ height: "700px" }}
+        style={{ height: "400px", width: "700px" }}
+        gl={{ preserveDrawingBuffer: true }}
       >
         <Suspense fallback={<CanvasLoader />}>
-
-   
-            <Stage environment="apartment">
-              <Computers />
-              <OrbitControls enableZoom={false} />
-            </Stage>
-          
+          <Stage environment="apartment">
+            <Computers />
+            <OrbitControls enableZoom={false} />
+          </Stage>
         </Suspense>
 
         <Preload all />
       </Canvas>
-
-<div className="absolute bottom-12 flex w-full items-center justify-center">
-  <a href="#about">
-    <div className="flex h-[64px] w-[35px] rounded-3xl border-4 border-white p-2">
-      <motion.div
-        animate={{
-          y: [0, 33, 0],
-        }}
-        transition={{
-          duration: 1.5,
-          repeat: Infinity,
-          repeatType: "loop",
-        }}
-        className="mb-1 h-3 w-3 rounded-full bg-white"
-      ></motion.div>
-    </div>
-  </a>
-</div>
     </section>
   );
 };
-
-
 
 export default ComputersCanvas;
