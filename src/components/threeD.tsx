@@ -3,7 +3,7 @@ import { Fragment, useState } from "react";
 import ComputersCanvas from "./canvas/Computers";
 
 export default function ThreeD() {
-  let [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
     setIsOpen(false);

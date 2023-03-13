@@ -5,7 +5,9 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { StarsCanvas } from "./canvas";
-
+//template_m7bfeqi
+//service_bdoaa7i
+//txHoftJzDvRd8_3Sm
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [form, setForm] = useState({
@@ -14,22 +16,54 @@ const Contact = () => {
     message: "",
   });
   const [loading, setLoading] = useState(false);
-  const handleChange = (e: ChangeEvent) => {console.log("hi")};
-  const handleSubmit = (e: SubmitEvent) => {console.log("hi")};
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ): void => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+  const handleSubmit = (e: React.SyntheticEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs
+      .send(
+        "service_bdoaa7i",
+        "template_m7bfeqi",
+        {
+          from_name: form.name,
+          to_name: "Zaki Orya",
+          from_email: form.email,
+          to_email: "zakioria@gmail.com",
+          message: form.message,
+        },
+        "txHoftJzDvRd8_3Sm"
+      )
+      .then(() => {
+        setLoading(false);
+        alert("thank you i will get back to you!");
+        setForm({ name: "", email: "", message: "" });
+      })
+      .catch((e) => {
+        setLoading(false);
+        console.log("Error", e);
+        alert("Something went wrong");
+      });
+  };
   return (
-    <section className="flex flex-col-reverse py-6 min-h-screen lg:flex-row">
+    <section className="flex min-h-screen flex-col-reverse py-6 lg:flex-row">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="mx-0 rounded-2xl border py-8 px-4 dark:bg-gradient-to-l dark:from-[#101212] dark:to-[#08201D] md:m-0 lg:w-[448px] lg:py-16"
       >
         <h2 className="mb-4 text-center text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-          Contact Us
+          Contact Me
         </h2>
         <p className="mb-8 text-center font-light text-gray-500 dark:text-gray-400 sm:text-xl lg:mb-16">
-          Got a technical issue? Want to send feedback about a beta feature?
-          Need details about our Business plan? Let us know.
+          Don't hesitate to reach out - whether it's for a potential
+          collaboration, to discuss a job opportunity, or just to say hello, I'm
+          always happy to connect.
         </p>
-        <form className="space-y-8">
+        <form onSubmit={handleSubmit} className="space-y-8">
           <div>
             <label
               htmlFor="name"
@@ -62,7 +96,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-emerald-500 focus:ring-emerald-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:shadow-sm dark:focus:border-emerald-500 dark:focus:ring-emerald-500"
-              placeholder="name@flowbite.com"
+              placeholder="name@gmail.com"
               required
             />
           </div>
@@ -97,7 +131,7 @@ const Contact = () => {
         className="relative h-[350px] md:h-[550px] xl:h-auto xl:flex-1"
       >
         <EarthCanvas />
-        <StarsCanvas/>
+        <StarsCanvas />
       </motion.div>
     </section>
   );
