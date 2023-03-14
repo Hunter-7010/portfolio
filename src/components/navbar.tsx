@@ -7,8 +7,9 @@ const Navbar = () => {
     <nav className="rounded border-gray-200 px-2 py-2.5 dark:bg-transparent sm:px-4">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <h1 className="flex items-center">
-          <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            Zaki Orya
+          <img src="/mylogo.png" alt="" className="w-10 h-10" />
+          <span className="self-center whitespace-nowrap text-xl font-bold dark:text-teal-50">
+            aki Orya
           </span>
         </h1>
 
