@@ -9,7 +9,7 @@ const Footer = () => {
           <a
             href="https://www.facebook.com/ZakiOriakhail"
             rel="noreferrer"
-            target="_blank"
+            target="_blank" rel="noreferrer"
             className="text-teal-700 transition hover:text-teal-700/75"
           >
             <span className="sr-only">Facebook</span>
@@ -31,7 +31,7 @@ const Footer = () => {
           <a
             href="https://www.instagram.com/zakiorya/"
             rel="noreferrer"
-            target="_blank"
+            target="_blank" rel="noreferrer"
             className="text-teal-700 transition hover:text-teal-700/75"
           >
             <span className="sr-only">Instagram</span>
@@ -53,7 +53,7 @@ const Footer = () => {
           <a
             href="https://twitter.com/ZakiOrya"
             rel="noreferrer"
-            target="_blank"
+            target="_blank" rel="noreferrer"
             className="text-teal-700 transition hover:text-teal-700/75"
           >
             <span className="sr-only">Twitter</span>
@@ -72,7 +72,7 @@ const Footer = () => {
           <a
             href="https://github.com/Hunter-7010"
             rel="noreferrer"
-            target="_blank"
+            target="_blank" rel="noreferrer"
             className="text-teal-700 transition hover:text-teal-700/75"
           >
             <span className="sr-only">GitHub</span>
@@ -94,7 +94,7 @@ const Footer = () => {
           <a
             href="https://dribbble.com/Zaki_Orya"
             rel="noreferrer"
-            target="_blank"
+            target="_blank" rel="noreferrer"
             className="text-teal-700 transition hover:text-teal-700/75"
           >
             <span className="sr-only">Dribbble</span>

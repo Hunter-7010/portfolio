@@ -42,7 +42,7 @@ const Projects = () => {
                 </a>
                 <a
                   href="https://maxfood.vercel.app/"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                   className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
                   <img
@@ -96,7 +96,7 @@ const Projects = () => {
                 />
                 <a
                   href="https://github.com/Hunter-7010/kanban"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                   className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
                   <img
@@ -107,7 +107,7 @@ const Projects = () => {
                 </a>
                 <a
                   href="https://kanbans.vercel.app/home"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                   className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
                   <img
@@ -164,7 +164,7 @@ const Projects = () => {
                 />
                 <a
                   href="https://github.com/Hunter-7010/crwn-clothing"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                   className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
                   <img
@@ -175,7 +175,7 @@ const Projects = () => {
                 </a>
                 <a
                   href="https://stirring-cendol-393ef5.netlify.app/"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                   className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
                   <img
@@ -229,7 +229,7 @@ const Projects = () => {
                 />
                 <a
                   href="https://github.com/Hunter-7010/YelpCamp"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                   className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
                   <img
@@ -240,7 +240,7 @@ const Projects = () => {
                 </a>
                 <a
                   href="https://yelpcamps.vercel.app/"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                   className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
                   <img
@@ -301,7 +301,7 @@ const Projects = () => {
                 />
                 <a
                   href="https://github.com/Hunter-7010/max-food"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                   className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
                   <img
@@ -312,7 +312,7 @@ const Projects = () => {
                 </a>
                 <a
                   href="https://maxfood.up.railway.app/"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                   className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
                   <img
