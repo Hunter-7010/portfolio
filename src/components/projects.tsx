@@ -5,7 +5,7 @@ import { SectionWrapper } from "../hoc";
 
 const Projects = () => {
   return (
-    <section className="p-2 min-h-screen">
+    <section className="min-h-screen p-2">
       <motion.div variants={textVariant(0)}>
         <h2 className="text-5xl font-black">Projects.</h2>
       </motion.div>
@@ -29,46 +29,54 @@ const Projects = () => {
             <div className="rounded-[10px] bg-gray-900 p-4 sm:p-6">
               <div className="relative">
                 <img
-                  alt="Lava"
-                  src="https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                  alt="Maxfood website"
+                  src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1679495725/samples/ecommerce/Screen_Shot_2023-03-22_at_17.35.01_zgh1fa.png"
                   className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
                 />
-                <div className="absolute top-2 right-2 z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white">
+                <a className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90">
                   <img
                     src="/github.png"
                     alt="github.com"
                     className="h-1/2 w-1/2 object-contain"
                   />
-                </div>
-                <div className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white">
+                </a>
+                <a
+                  href="https://maxfood.vercel.app/"
+                  target="_blank"
+                  className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
+                >
                   <img
                     src="/url.png"
-                    alt="github.com"
+                    alt="Live preview"
                     className="h-1/2 w-1/2 object-contain"
                   />
-                </div>
+                </a>
               </div>
 
               <div className="pt-4">
                 <a href="#">
-                  <h3 className="text-lg font-medium text-white">
-                    Finding the Journey to Mordor
-                  </h3>
+                  <h3 className="text-lg font-medium text-white">Maxfood</h3>
                 </a>
 
-                <p className="mt-2 text-sm leading-relaxed text-gray-400 line-clamp-3">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Recusandae dolores, possimus pariatur animi temporibus
-                  nesciunt
+                <p className="mt-2 text-sm leading-relaxed text-gray-400 ">
+                  This website has a user-friendly interface for customers to
+                  browse products and make purchases. It also has an admin
+                  portal for managing orders, inventory, and shipping,
                 </p>
               </div>
               <div className="mt-4 flex flex-wrap gap-1">
-                <span className="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-xs text-green-600">
-                  Snippet
+                <span className="whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-xs text-blue-600">
+                  Typescript
                 </span>
 
+                <span className="whitespace-nowrap rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-600">
+                  Next.js
+                </span>
                 <span className="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-xs text-green-600">
-                  JavaScript
+                  Mongodb
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-fuchsia-500 via-blue-500 to-violet-600 px-2.5 py-0.5 text-xs text-white antialiased">
+                  NextAuth
                 </span>
               </div>
             </div>
@@ -76,52 +84,273 @@ const Projects = () => {
         </Tilt>
         <Tilt className="m-2 w-full sm:w-[350px]">
           <motion.article
-            variants={fadeIn("right", "spring", 0.5 * 1, 2.5)}
+            variants={fadeIn("right", "spring", 0.5 * 0, 2.5)}
             className="group animate-border rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
           >
             <div className="rounded-[10px] bg-gray-900 p-4 sm:p-6">
               <div className="relative">
                 <img
-                  alt="Lava"
-                  src="https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                  alt="Kanban website"
+                  src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1679498944/samples/ecommerce/Screen_Shot_2023-03-22_at_18.29.00_nxhmmd.png"
                   className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
                 />
-                <div className="absolute top-2 right-2 z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white">
+                <a
+                  href="https://github.com/Hunter-7010/kanban"
+                  target="_blank"
+                  className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
+                >
                   <img
                     src="/github.png"
                     alt="github.com"
                     className="h-1/2 w-1/2 object-contain"
                   />
-                </div>
-                <div className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white">
+                </a>
+                <a
+                  href="https://kanbans.vercel.app/home"
+                  target="_blank"
+                  className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
+                >
                   <img
                     src="/url.png"
+                    alt="Live preview"
+                    className="h-1/2 w-1/2 object-contain"
+                  />
+                </a>
+              </div>
+
+              <div className="pt-4">
+                <a href="#">
+                  <h3 className="text-lg font-medium text-white">Kanban</h3>
+                </a>
+
+                <p className="mt-2 text-sm leading-relaxed text-gray-400 ">
+                  Allows users to easily manage daily tasks by adding and
+                  categorizing to-do lists. The intuitive interface allows for
+                  quick task prioritization and completion.
+                </p>
+              </div>
+              <div className="mt-4 flex flex-wrap gap-1">
+                <span className="whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-xs text-blue-600">
+                  Typescript
+                </span>
+
+                <span className="whitespace-nowrap rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-600">
+                  Next.js
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-xs text-green-600">
+                  Mongodb
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-fuchsia-500 via-blue-500 to-violet-600 px-2.5 py-0.5 text-xs text-white antialiased">
+                  NextAuth
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-blue-500 via-blue-300 to-blue-100 px-2.5 py-0.5 text-xs text-blue-800 antialiased">
+                  Tailwind
+                </span>
+              </div>
+            </div>
+          </motion.article>
+        </Tilt>
+        <Tilt className="m-2 w-full sm:w-[350px]">
+          <motion.article
+            variants={fadeIn("right", "spring", 0.5 * 0, 2.5)}
+            className="group animate-border rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
+          >
+            <div className="rounded-[10px] bg-gray-900 p-4 sm:p-6">
+              <div className="relative">
+                <img
+                  alt="E-commerce"
+                  src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1679497986/samples/ecommerce/Screen_Shot_2023-03-22_at_18.12.54_vykkmh.png"
+                  className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+                />
+                <a
+                  href="https://github.com/Hunter-7010/crwn-clothing"
+                  target="_blank"
+                  className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
+                >
+                  <img
+                    src="/github.png"
                     alt="github.com"
                     className="h-1/2 w-1/2 object-contain"
                   />
-                </div>
+                </a>
+                <a
+                  href="https://stirring-cendol-393ef5.netlify.app/"
+                  target="_blank"
+                  className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
+                >
+                  <img
+                    src="/url.png"
+                    alt="Live preview"
+                    className="h-1/2 w-1/2 object-contain"
+                  />
+                </a>
               </div>
 
               <div className="pt-4">
                 <a href="#">
                   <h3 className="text-lg font-medium text-white">
-                    Finding the Journey to Mordor
+                    Crwn-Clothing
                   </h3>
                 </a>
 
-                <p className="mt-2 text-sm leading-relaxed text-gray-400 line-clamp-3">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Recusandae dolores, possimus pariatur animi temporibus
-                  nesciunt
+                <p className="mt-2 text-sm leading-relaxed text-gray-400 ">
+                  This e-commerce website was created using Create-React-App,
+                  Firebase, and SCSS. It features a modern and responsive
+                  design.
                 </p>
               </div>
               <div className="mt-4 flex flex-wrap gap-1">
-                <span className="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-xs text-green-600">
-                  Snippet
+                <span className="whitespace-nowrap rounded-full bg-cyan-100 px-2.5 py-0.5 text-xs text-cyan-600">
+                  React
                 </span>
 
+                <span className="whitespace-nowrap rounded-full bg-orange-100 px-2.5 py-0.5 text-xs text-orange-600">
+                  Firebase
+                </span>
+
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-fuchsia-500  to-pink-600 px-2.5 py-0.5 text-xs text-white antialiased">
+                  SCSS
+                </span>
+              </div>
+            </div>
+          </motion.article>
+        </Tilt>
+        <Tilt className="m-2 w-full sm:w-[350px]">
+          <motion.article
+            variants={fadeIn("right", "spring", 0.5 * 0, 2.5)}
+            className="group animate-border rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
+          >
+            <div className="rounded-[10px] bg-gray-900 p-4 sm:p-6">
+              <div className="relative">
+                <img
+                  alt="Yelp Camps"
+                  src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1679500532/samples/ecommerce/Screen_Shot_2023-03-22_at_18.55.22_mh2k17.png"
+                  className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+                />
+                <a
+                  href="https://github.com/Hunter-7010/YelpCamp"
+                  target="_blank"
+                  className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
+                >
+                  <img
+                    src="/github.png"
+                    alt="github.com"
+                    className="h-1/2 w-1/2 object-contain"
+                  />
+                </a>
+                <a
+                  href="https://yelpcamps.vercel.app/"
+                  target="_blank"
+                  className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
+                >
+                  <img
+                    src="/url.png"
+                    alt="Live preview"
+                    className="h-1/2 w-1/2 object-contain"
+                  />
+                </a>
+              </div>
+
+              <div className="pt-4">
+                <a href="#">
+                  <h3 className="text-lg font-medium text-white">YelpCamp</h3>
+                </a>
+
+                <p className="mt-2 text-sm leading-relaxed text-gray-400 ">
+                  Lets users share and rate campgrounds they have
+                  visited, with an interactive interface for easy navigation. It
+                  provides valuable insights and recommendations for other
+                  campers planning their next outdoor adventure.
+                </p>
+              </div>
+              <div className="mt-4 flex flex-wrap gap-1">
+                <span className="whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-xs text-blue-600">
+                  Typescript
+                </span>
+
+                <span className="whitespace-nowrap rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-600">
+                  Next.js
+                </span>
                 <span className="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-xs text-green-600">
-                  JavaScript
+                  Mongodb
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-fuchsia-500 via-blue-500 to-violet-600 px-2.5 py-0.5 text-xs text-white antialiased">
+                  NextAuth
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-blue-400 px-2.5 py-0.5 text-xs text-white antialiased">
+                  TRPC
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-gray-900 via-gray-500 to-gray-400 px-2.5 py-0.5 text-xs text-white antialiased">
+                  Prisma
+                </span>
+              </div>
+            </div>
+          </motion.article>
+        </Tilt>
+        <Tilt className="m-2 w-full sm:w-[350px]">
+          <motion.article
+            variants={fadeIn("right", "spring", 0.5 * 0, 2.5)}
+            className="group animate-border rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
+          >
+            <div className="rounded-[10px] bg-gray-900 p-4 sm:p-6">
+              <div className="relative">
+                <img
+                  alt="MaxFood"
+                  src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1673520472/samples/ecommerce/Screen_Shot_2023-01-12_at_13.44.51_vwgld5.png"
+                  className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+                />
+                <a
+                  href="https://github.com/Hunter-7010/max-food"
+                  target="_blank"
+                  className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
+                >
+                  <img
+                    src="/github.png"
+                    alt="github.com"
+                    className="h-1/2 w-1/2 object-contain"
+                  />
+                </a>
+                <a
+                  href="https://maxfood.up.railway.app/"
+                  target="_blank"
+                  className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
+                >
+                  <img
+                    src="/url.png"
+                    alt="Live preview"
+                    className="h-1/2 w-1/2 object-contain"
+                  />
+                </a>
+              </div>
+
+              <div className="pt-4">
+                <a href="#">
+                  <h3 className="text-lg font-medium text-white">MaxFood</h3>
+                </a>
+
+                <p className="mt-2 text-sm leading-relaxed text-gray-400 ">
+                  This was my first website, featuring an admin portal for
+                  managing orders, inventory, shipping, and invoicing. Since
+                  then, I have developed an improved version with enhanced
+                  functionality and a more modern design.
+                </p>
+              </div>
+              <div className="mt-4 flex flex-wrap gap-1">
+                <span className="whitespace-nowrap rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs text-yellow-600">
+                  Javascript
+                </span>
+
+                <span className="whitespace-nowrap rounded-full bg-green-500 px-2.5 py-0.5 text-xs text-white">
+                 Node.js
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-xs text-green-600">
+                  Mongodb
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-yellow-500 via-green-500 to-blue-600 px-2.5 py-0.5 text-xs text-white antialiased">
+                Passport.js
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-blue-500 to-white px-2.5 py-0.5 text-xs text-black antialiased">
+                Hope UI
                 </span>
               </div>
             </div>

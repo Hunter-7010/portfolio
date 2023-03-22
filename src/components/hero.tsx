@@ -3,9 +3,24 @@ import { motion } from "framer-motion";
 import ThreeD from "./threeD";
 const Hero = () => {
   const [text, count] = useTypewriter({
-    words: ["Web applications", "Modern user interfaces"],
+    words: [
+      "I develope Web applications",
+      "I develope Modern user interfaces",
+      "I create responsive websites",
+      "I design intuitive user experiences",
+      "I create responsive websites",
+      "I design intuitive user experiences",
+      "I build mobile-friendly apps",
+      "I optimize website performance",
+      "I develop scalable software solutions",
+      "I craft visually appealing interfaces",
+      "I integrate complex systems seamlessly",
+      "I specialize in front-end development",
+      "I engineer custom web solutions",
+      "I implement cutting-edge technologies",
+    ],
     loop: true,
-    delaySpeed: 2000,
+    delaySpeed: 1500,
   });
   return (
     <section className="relative min-h-screen w-full">
@@ -15,7 +30,6 @@ const Hero = () => {
           className="absolute top-64 md:bottom-0 md:right-0 md:top-0 md:h-[42rem]"
           alt="macbook"
         />
-       
       </div>
       <div className="absolute top-[121px] z-20 mx-auto max-w-7xl pl-12">
         <div className="mx-auto max-w-xl">
@@ -25,14 +39,14 @@ const Hero = () => {
               Hi, I&apos;m Zaki Orya{" "}
             </span>
           </h1>
-          <p className="mt-5 text-base text-white sm:text-xl">
-            I develope {text}
+          <p className="mt-5 text-base text-white sm:text-3xl">
+            {text}
             <Cursor cursorColor="#FFFFFF" />
           </p>
         </div>
       </div>
       <div className="z-12 absolute right-28 top-72 md:bottom-0 md:right-36 md:top-4">
-      <ThreeD/>
+        <ThreeD />
       </div>
       <a href="#about">
         <div className="z-12 absolute inset-x-1/2 bottom-16 h-[64px] w-[35px] rounded-3xl border-4 border-white p-2">
