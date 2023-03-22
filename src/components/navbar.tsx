@@ -1,13 +1,13 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-
   return (
     <nav className="rounded border-gray-200 px-2 py-2.5 dark:bg-transparent sm:px-4">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <h1 className="flex items-center">
-          <img src="/mylogo.png" alt="" className="w-10 h-10" />
+          <img src="/mylogo.png" alt="" className="h-10 w-10" />
           <span className="self-center whitespace-nowrap text-xl font-bold dark:text-teal-50">
             aki Orya
           </span>
@@ -45,60 +45,89 @@ const Navbar = () => {
         >
           <ul className="mt-4 flex flex-col rounded-lg border p-4 dark:border-gray-700 dark:bg-gradient-to-l dark:from-[#101212] dark:to-[#08201D] md:mt-0 md:flex-row md:space-x-8 md:border-0 md:text-sm md:font-medium md:dark:from-transparent">
             <li>
-              <a
-                href="#"
-                className="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white"
+              <Link
+                activeClass="active"
+                spy={true}
+                smooth
+                offset={-70}
+                duration={500}
+                to=""
+                className="block cursor-pointer rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white"
                 aria-current="page"
               >
                 Intro
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#about"
-                className="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white"
+              <Link
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="about"
+                className="block cursor-pointer rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white"
               >
                 About
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a
-                href="#experience"
-                className="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white"
+              <Link
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="experience"
+                className="block cursor-pointer rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white"
               >
                 Journey
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#skills"
-                className="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white"
+              <Link
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="skills"
+                className="block cursor-pointer rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white"
               >
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#projects"
-                className="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white"
+              <Link
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="projects"
+                className="block cursor-pointer rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white"
               >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#contact"
-                className="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white"
+              <Link
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="contact"
+                className="block cursor-pointer rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-   
   );
 };
 

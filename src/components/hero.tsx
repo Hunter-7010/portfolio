@@ -1,6 +1,7 @@
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import ThreeD from "./threeD";
+import { Link } from "react-scroll";
 const Hero = () => {
   const [text, count] = useTypewriter({
     words: [
@@ -49,7 +50,16 @@ const Hero = () => {
         <ThreeD />
       </div>
       <a href="#about">
-        <div className="z-12 absolute inset-x-1/2 bottom-16 h-[64px] w-[35px] rounded-3xl border-4 border-white p-2">
+        <Link
+          to="about"
+          activeClass="active"
+          spy={true}
+          smooth
+          offset={-70}
+          duration={500}
+          aria-current="page"
+          className="z-12 absolute inset-x-1/2 bottom-16 h-[64px] w-[35px] rounded-3xl border-4 border-white p-2"
+        >
           <motion.div
             animate={{
               y: [0, 33, 0],
@@ -61,7 +71,7 @@ const Hero = () => {
             }}
             className="mb-1 h-3 w-3 rounded-full bg-white"
           ></motion.div>
-        </div>
+        </Link>
       </a>
     </section>
   );
