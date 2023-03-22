@@ -41,7 +41,7 @@ const Hero = () => {
             </span>
           </h1>
           <p className="mt-5 text-base text-white sm:text-3xl">
-            {text}
+            hi {text}
             <Cursor cursorColor="#FFFFFF" />
           </p>
         </div>
@@ -49,30 +49,29 @@ const Hero = () => {
       <div className="z-12 absolute right-28 top-72 md:bottom-0 md:right-36 md:top-4">
         <ThreeD />
       </div>
-      <a href="#about">
-        <Link
-          to="about"
-          activeClass="active"
-          spy={true}
-          smooth
-          offset={-70}
-          duration={500}
-          aria-current="page"
-          className="z-12 absolute inset-x-1/2 bottom-16 h-[64px] w-[35px] rounded-3xl border-4 border-white p-2"
-        >
-          <motion.div
-            animate={{
-              y: [0, 33, 0],
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              repeatType: "loop",
-            }}
-            className="mb-1 h-3 w-3 rounded-full bg-white"
-          ></motion.div>
-        </Link>
-      </a>
+
+      <Link
+        to="about"
+        activeClass="active"
+        spy={true}
+        smooth
+        offset={-70}
+        duration={500}
+        aria-current="page"
+        className="z-12 absolute inset-x-1/2 bottom-16 h-[64px] w-[35px] cursor-pointer rounded-3xl border-4 border-white p-2"
+      >
+        <motion.div
+          animate={{
+            y: [0, 33, 0],
+          }}
+          transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+          className="mb-1 h-3 w-3 rounded-full bg-white"
+        ></motion.div>
+      </Link>
     </section>
   );
 };
