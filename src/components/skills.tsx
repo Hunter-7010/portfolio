@@ -8,8 +8,8 @@ const Skills = () => {
     <section className="min-h-screen">
       <motion.div variants={textVariant(0)}>
         <h2 className="text-5xl font-black">Skills</h2>
-        <p className="opacity-70 hidden md:block">Hover over to view proficiency.</p>
       </motion.div>
+        <motion.p variants={textVariant(0.8)} className="opacity-70 hidden md:block">Hover over to view proficiency.</motion.p>
       <div className="flex w-full items-center justify-center">
         <motion.div
           variants={textVariant(0.4)}

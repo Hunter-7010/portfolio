@@ -7,10 +7,10 @@ const About = () => {
     <section className="px-2 text-white min-h-screen" id="about">
       <motion.div variants={textVariant(0)}>
         <p className="opacity-70">Introduction</p>
-        <h2 className="text-5xl font-black">Overview.</h2>
       </motion.div>
+        <motion.h2 variants={textVariant(0.4)} className="text-5xl font-black">Overview.</motion.h2>
       <motion.p
-        variants={fadeIn("", "", 0.3, 1)}
+        variants={fadeIn("", "", 0.6, 1)}
         className="mt-4 max-w-4xl leading-[30px] opacity-70"
       >
         I am an experienced software developer proficient in JavaScript,
@@ -24,7 +24,7 @@ const About = () => {
       <div className="mt-20 flex flex-wrap gap-10">
         <Tilt  className="m-2 w-full sm:w-[250px]">
           <motion.div
-            variants={fadeIn("right", "spring", 0.5 * 0,0.75)}
+            variants={fadeIn("right", "spring", 0.6 * 0,0.75)}
             className="animate-border rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
           >
             <div className="flex min-h-[280px] flex-col items-center justify-evenly rounded-[10px] p-4 sm:p-6">
@@ -35,7 +35,7 @@ const About = () => {
         </Tilt>
         <Tilt  className="m-2 w-full sm:w-[250px]">
           <motion.div
-            variants={fadeIn("right", "spring", 0.5 * 1,0.75)}
+            variants={fadeIn("right", "spring", 0.6 * 1,0.75)}
             className="animate-border rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
           >
             <div className="flex min-h-[280px] flex-col items-center justify-evenly rounded-[10px] p-4 sm:p-6">
@@ -46,7 +46,7 @@ const About = () => {
         </Tilt>
         <Tilt  className="m-2 w-full sm:w-[250px]">
           <motion.div
-            variants={fadeIn("right", "spring", 0.5 * 2,0.75)}
+            variants={fadeIn("right", "spring", 0.6 * 2,0.75)}
             className="animate-border rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
           >
             <div className="flex min-h-[280px] flex-col items-center justify-evenly rounded-[10px] p-4 sm:p-6">
