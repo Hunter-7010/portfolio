@@ -24,7 +24,7 @@ const Projects = () => {
         <Tilt className="m-2 w-full sm:w-[350px]">
           <motion.article
             variants={fadeIn("right", "spring", 0.5 * 0, 2.5)}
-            className="group animate-border rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
+            className="group rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
           >
             <div className="rounded-[10px] bg-gray-900 p-4 sm:p-6">
               <div className="relative">
@@ -84,8 +84,8 @@ const Projects = () => {
         </Tilt>
         <Tilt className="m-2 w-full sm:w-[350px]">
           <motion.article
-            variants={fadeIn("right", "spring", 0.5 * 0, 2.5)}
-            className="group animate-border rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
+            variants={fadeIn("right", "spring", 0.5 * 0.5, 2.5)}
+            className="group rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
           >
             <div className="rounded-[10px] bg-gray-900 p-4 sm:p-6">
               <div className="relative">
@@ -152,8 +152,8 @@ const Projects = () => {
         </Tilt>
         <Tilt className="m-2 w-full sm:w-[350px]">
           <motion.article
-            variants={fadeIn("right", "spring", 0.5 * 0, 2.5)}
-            className="group animate-border rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
+            variants={fadeIn("right", "spring", 0.5 * 1, 2.5)}
+            className="group rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
           >
             <div className="rounded-[10px] bg-gray-900 p-4 sm:p-6">
               <div className="relative">
@@ -217,8 +217,8 @@ const Projects = () => {
         </Tilt>
         <Tilt className="m-2 w-full sm:w-[350px]">
           <motion.article
-            variants={fadeIn("right", "spring", 0.5 * 0, 2.5)}
-            className="group animate-border rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
+            variants={fadeIn("right", "spring", 0.5 * 1.5, 2.5)}
+            className="group rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
           >
             <div className="rounded-[10px] bg-gray-900 p-4 sm:p-6">
               <div className="relative">
@@ -289,8 +289,8 @@ const Projects = () => {
         </Tilt>
         <Tilt className="m-2 w-full sm:w-[350px]">
           <motion.article
-            variants={fadeIn("right", "spring", 0.5 * 0, 2.5)}
-            className="group animate-border rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
+            variants={fadeIn("right", "spring", 0.5 * 2, 2.5)}
+            className="group rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
           >
             <div className="rounded-[10px] bg-gray-900 p-4 sm:p-6">
               <div className="relative">
