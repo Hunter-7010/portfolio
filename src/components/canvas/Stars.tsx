@@ -35,7 +35,7 @@ const StarsCanvas = () => {
   return (
     <div className="absolute inset-0 z-[-1] h-auto w-full">
       {/* 0.5 for performance */}
-      <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 1] }}>
+      <Canvas dpr={1} camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Stars />
         </Suspense>
