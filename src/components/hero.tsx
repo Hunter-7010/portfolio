@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import ThreeD from "./threeD";
 import { Link } from "react-scroll";
 const Hero = () => {
-  const [text, count] = useTypewriter({
+  const [text] = useTypewriter({
     words: [
       "I develope Web applications",
       "I develope Modern user interfaces",
