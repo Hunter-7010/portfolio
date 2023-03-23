@@ -62,7 +62,7 @@ const Experience = () => {
       <div className="mt-20 flex flex-col min-h-screen">
         <VerticalTimeline>
           <ExperienceCard key={`experience-1`} />
-          <ExperienceCard key={`experience-1`} />
+          <ExperienceCard key={`experience-2`} />
         </VerticalTimeline>
       </div>
     </>

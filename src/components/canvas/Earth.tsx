@@ -17,7 +17,7 @@ const EarthCanvas = () => {
     <Canvas
       shadows
       frameloop='demand'
-      dpr={1}
+      dpr={[1, 2] }
       // [1, 2] default dpr
       camera={{
         fov: 45,

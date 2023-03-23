@@ -47,7 +47,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="z-12 absolute right-28 top-72 md:bottom-0 md:right-36 md:top-4">
-        <ThreeD />
+        {/* <ThreeD /> */}
       </div>
 
       <Link
