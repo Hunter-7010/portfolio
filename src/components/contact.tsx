@@ -1,4 +1,4 @@
-import { useState, useRef, ChangeEvent } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { EarthCanvas } from "./canvas";
@@ -9,7 +9,6 @@ import { StarsCanvas } from "./canvas";
 //service_bdoaa7i
 //txHoftJzDvRd8_3Sm
 const Contact = () => {
-  const formRef = useRef<HTMLFormElement>(null);
   const [form, setForm] = useState({
     name: "",
     email: "",
