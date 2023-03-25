@@ -41,7 +41,7 @@ const Hero = () => {
             </span>
           </h1>
           <p className="mt-5 text-base text-white sm:text-3xl">
-            hi {text}
+            {text}
             <Cursor cursorColor="#FFFFFF" />
           </p>
         </div>
