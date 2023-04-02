@@ -106,7 +106,7 @@ const Projects = () => {
                   />
                 </a>
                 <a
-                  href="https://kanbans.vercel.app/home"
+                  href="https://kanbans.vercel.app"
                   target="_blank" rel="noreferrer"
                   className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
