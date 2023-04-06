@@ -15,9 +15,8 @@ const ExperienceCard = () => {
         backgroundImage: "linear-gradient(to right, #101212, #08201D)",
         color: "#fff",
       }}
-    
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-       date="October 2022"
+      date="October 2021"
       // iconStyle={{ background: experience.iconBg }}
       icon={
         <div className="flex h-full w-full items-center justify-center">
@@ -30,21 +29,34 @@ const ExperienceCard = () => {
       }
     >
       <div>
-        <h3 className="text-[24px] font-bold text-white">Web devloper</h3>
+        <h3 className="text-[24px] font-bold text-white">
+          Marketing Assistant
+        </h3>
         <p
           className="text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
-          max food
+          Max Food Group Sp. z o.o
         </p>
       </div>
 
       <ul className="mt-5 ml-5 list-disc space-y-2">
-        <li
-          key={`experience-point-1`}
-          className="text-white-100 pl-1 text-[14px] tracking-wider"
-        >
-          1{" "}
+        <li className="text-white-100 pl-1 text-[14px] tracking-wider">
+          Assist in the development and maintenance of the company's website,
+          including updating content, images, and layout.
+        </li>
+        <li className="text-white-100 pl-1 text-[14px] tracking-wider">
+          Assist in the development of marketing campaigns and initiatives.
+        </li>
+        <li className="text-white-100 pl-1 text-[14px] tracking-wider">
+          Maintain and update the company's website and social media platforms.{" "}
+        </li>
+        <li className="text-white-100 pl-1 text-[14px] tracking-wider">
+          Monitor market trends and conduct market research.
+        </li>
+        <li className="text-white-100 pl-1 text-[14px] tracking-wider">
+          Assist in the creation of marketing materials, such as presentations,
+          social media content, and email campaigns.{" "}
         </li>
       </ul>
     </VerticalTimelineElement>
@@ -59,10 +71,10 @@ const Experience = () => {
         <h2 className="text-5xl font-black">Work Experience.</h2>
       </motion.div>
 
-      <div className="mt-20 flex flex-col min-h-screen">
+      <div className="mt-20 flex min-h-screen flex-col">
         <VerticalTimeline>
           <ExperienceCard key={`experience-1`} />
-          <ExperienceCard key={`experience-2`} />
+          
         </VerticalTimeline>
       </div>
     </>
