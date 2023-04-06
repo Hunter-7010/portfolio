@@ -42,14 +42,14 @@ const ExperienceCard = () => {
 
       <ul className="mt-5 ml-5 list-disc space-y-2">
         <li className="text-white-100 pl-1 text-[14px] tracking-wider">
-          Assist in the development and maintenance of the company's website,
+          Assist in the development and maintenance of the company&apos;s website,
           including updating content, images, and layout.
         </li>
         <li className="text-white-100 pl-1 text-[14px] tracking-wider">
           Assist in the development of marketing campaigns and initiatives.
         </li>
         <li className="text-white-100 pl-1 text-[14px] tracking-wider">
-          Maintain and update the company's website and social media platforms.{" "}
+          Maintain and update the company&apos;s website and social media platforms.{" "}
         </li>
         <li className="text-white-100 pl-1 text-[14px] tracking-wider">
           Monitor market trends and conduct market research.
