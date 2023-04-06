@@ -228,7 +228,7 @@ const Projects = () => {
                   className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
                 />
                 <a
-                  href="https://github.com/Hunter-7010/YelpCamp"
+                  href="https://github.com/Hunter-7010/yelpcampV2"
                   target="_blank" rel="noreferrer"
                   className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
