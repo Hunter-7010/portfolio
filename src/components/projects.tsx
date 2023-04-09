@@ -224,7 +224,7 @@ const Projects = () => {
               <div className="relative">
                 <img
                   alt="Yelp Camps"
-                  src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1679500532/samples/ecommerce/Screen_Shot_2023-03-22_at_18.55.22_mh2k17.png"
+                  src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1681036206/samples/ecommerce/Screen_Shot_2023-04-09_at_1.28.45_PM_p8dtn5.png"
                   className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
                 />
                 <a
