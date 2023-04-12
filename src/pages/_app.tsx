@@ -12,8 +12,8 @@ const MyApp: AppType = ({ Component, pageProps }) => {
       <Script
         async
         defer
-        data-website-id="c439c72c-6bde-4c7b-a890-edb71d30a81b"
-        src="https://umami-production-f85b.up.railway.app/umami.js"
+        data-website-id="de8f5c4a-ce8f-4e22-8f80-a0afff8669ff"
+        src="https://umamianalytics.netlify.app/umami.js"
       />
 
       <Component {...pageProps} />
