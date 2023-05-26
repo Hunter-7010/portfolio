@@ -1,6 +1,6 @@
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
-import ThreeD from "./threeD";
+// import ThreeD from "./threeD";
 import { Link } from "react-scroll";
 const Hero = () => {
   const [text] = useTypewriter({
@@ -46,9 +46,9 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="z-12 absolute right-28 top-72 md:bottom-0 md:right-36 md:top-4">
+      {/* <div className="z-12 absolute right-28 top-72 md:bottom-0 md:right-36 md:top-4">
         <ThreeD />
-      </div>
+      </div> */}
 
       <Link
         to="about"
