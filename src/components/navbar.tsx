@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="rounded border-gray-200 px-2 py-2.5 dark:bg-transparent sm:px-4">
+    <nav className="rounded border-gray-200 px-2 py-2.5 dark:bg-transparent sm:px-4 relative z-[100]">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <h1 className="flex items-center">
           <img src="/mylogo.png" alt="" className="h-10 w-10" />
