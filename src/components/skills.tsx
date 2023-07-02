@@ -2,7 +2,7 @@ import React from "react";
 import { SectionWrapper } from "../hoc";
 import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion";
-
+import Image from "next/image";
 const Skills = () => {
   return (
     <section className="min-h-screen">
@@ -17,8 +17,10 @@ const Skills = () => {
         >
           {" "}
           <div className="group relative cursor-pointer">
-            <img
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+            <Image
+            width={92}
+            height={50}
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
               src="/nextjs.png"
               alt="Nextjs"
             />
@@ -29,8 +31,10 @@ const Skills = () => {
             </div>
           </div>{" "}
           <div className="group relative cursor-pointer">
-            <img
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+            <Image
+            width={92}
+            height={50}
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
               src="/typescript.png"
               alt="Typescript"
             />
@@ -41,8 +45,10 @@ const Skills = () => {
             </div>
           </div>{" "}
           <div className="group relative cursor-pointer">
-            <img
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+            <Image
+            width={92}
+            height={50}
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
               src="/javascript.png"
               alt="Javascript"
             />
@@ -53,8 +59,10 @@ const Skills = () => {
             </div>
           </div>{" "}
           <div className="group relative cursor-pointer">
-            <img
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+            <Image
+            width={92}
+            height={50}
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
               src="/mongodb.png"
               alt="Mongodb"
             />
@@ -65,8 +73,10 @@ const Skills = () => {
             </div>
           </div>{" "}
           <div className="group relative cursor-pointer">
-            <img
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+            <Image
+            width={92}
+            height={50}
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
               src="/react.png"
               alt="React"
             />
@@ -77,8 +87,10 @@ const Skills = () => {
             </div>
           </div>{" "}
           <div className="group relative cursor-pointer">
-            <img
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+            <Image
+            width={92}
+            height={50}
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
               src="/nextauth.png"
               alt="NextAuth"
             />
@@ -89,8 +101,10 @@ const Skills = () => {
             </div>
           </div>{" "}
           <div className="group relative cursor-pointer">
-            <img
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+            <Image
+            width={92}
+            height={50}
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
               src="/prisma.png"
               alt="Prisma"
             />
@@ -101,8 +115,10 @@ const Skills = () => {
             </div>
           </div>{" "}
           <div className="group relative cursor-pointer">
-            <img
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+            <Image
+            width={92}
+            height={50}
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
               src="/python.png"
               alt="python"
             />
@@ -113,8 +129,10 @@ const Skills = () => {
             </div>
           </div>{" "}
           <div className="group relative cursor-pointer">
-            <img
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+            <Image
+            width={92}
+            height={50}
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
               src="/tailwind.png"
               alt="tailwind"
             />
@@ -125,8 +143,10 @@ const Skills = () => {
             </div>
           </div>{" "}
           <div className="group relative cursor-pointer">
-            <img
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+            <Image
+            width={92}
+            height={50}
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
               src="/html.png"
               alt="html"
             />
@@ -137,8 +157,10 @@ const Skills = () => {
             </div>
           </div>{" "}
           <div className="group relative cursor-pointer">
-            <img
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+            <Image
+            width={92}
+            height={50}
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
               src="/css.png"
               alt="css"
             />
@@ -149,8 +171,10 @@ const Skills = () => {
             </div>
           </div>{" "}
           <div className="group relative cursor-pointer">
-            <img
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+            <Image
+            width={92}
+            height={50}
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
               src="/trpc.png"
               alt="Trpc"
             />
@@ -161,8 +185,10 @@ const Skills = () => {
             </div>
           </div>{" "}
           <div className="group relative cursor-pointer">
-            <img
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+            <Image
+            width={92}
+            height={50}
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
               src="/nodejs.png"
               alt="Nodejs"
             />
@@ -173,8 +199,10 @@ const Skills = () => {
             </div>
           </div>{" "}
           <div className="group relative cursor-pointer">
-            <img
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+            <Image
+            width={92}
+            height={50}
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
               src="/express.png"
               alt="Express"
             />
@@ -185,8 +213,10 @@ const Skills = () => {
             </div>
           </div>{" "}
           <div className="group relative cursor-pointer">
-            <img
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+            <Image
+            width={92}
+            height={50}
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
               src="/threejs.png"
               alt="ThreeJS"
             />

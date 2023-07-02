@@ -2,7 +2,7 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { textVariant, fadeIn } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
-
+import Image from "next/image";
 const Projects = () => {
   return (
     <section className="min-h-screen p-2">
@@ -28,13 +28,17 @@ const Projects = () => {
           >
             <div className="rounded-[10px] bg-purple-900 p-4 sm:p-6">
               <div className="relative">
-                <img
+                <Image
+                  height={176}
+                  width={206}
                   alt="Maxfood website"
                   src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1679495725/samples/ecommerce/Screen_Shot_2023-03-22_at_17.35.01_zgh1fa.png"
-                  className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:purplescale-[50%]"
+                  className="group-hover:purplescale-[50%] h-44 w-full rounded-xl object-cover shadow-xl transition"
                 />
                 <a className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90">
-                  <img
+                  <Image
+                    height={76}
+                    width={66}
                     src="/github.png"
                     alt="github.com"
                     className="h-1/2 w-1/2 object-contain"
@@ -46,7 +50,9 @@ const Projects = () => {
                   rel="noreferrer"
                   className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
-                  <img
+                  <Image
+                    height={76}
+                    width={66}
                     src="/url.png"
                     alt="Live preview"
                     className="h-1/2 w-1/2 object-contain"
@@ -90,10 +96,12 @@ const Projects = () => {
           >
             <div className="rounded-[10px] bg-purple-900 p-4 sm:p-6">
               <div className="relative">
-                <img
+                <Image
+                  height={176}
+                  width={206}
                   alt="Yelp Camps"
                   src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1681036206/samples/ecommerce/Screen_Shot_2023-04-09_at_1.28.45_PM_p8dtn5.png"
-                  className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:purplescale-[50%]"
+                  className="group-hover:purplescale-[50%] h-44 w-full rounded-xl object-cover shadow-xl transition"
                 />
                 <a
                   href="https://github.com/Hunter-7010/yelpcampV3"
@@ -101,7 +109,9 @@ const Projects = () => {
                   rel="noreferrer"
                   className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
-                  <img
+                  <Image
+                    height={76}
+                    width={66}
                     src="/github.png"
                     alt="github.com"
                     className="h-1/2 w-1/2 object-contain"
@@ -113,7 +123,9 @@ const Projects = () => {
                   rel="noreferrer"
                   className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
-                  <img
+                  <Image
+                    height={76}
+                    width={66}
                     src="/url.png"
                     alt="Live preview"
                     className="h-1/2 w-1/2 object-contain"
@@ -164,10 +176,12 @@ const Projects = () => {
           >
             <div className="rounded-[10px] bg-purple-900 p-4 sm:p-6">
               <div className="relative">
-                <img
+                <Image
+                  height={176}
+                  width={206}
                   alt="Kanban website"
                   src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1679498944/samples/ecommerce/Screen_Shot_2023-03-22_at_18.29.00_nxhmmd.png"
-                  className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:purplescale-[50%]"
+                  className="group-hover:purplescale-[50%] h-44 w-full rounded-xl object-cover shadow-xl transition"
                 />
                 <a
                   href="https://github.com/Hunter-7010/kanban"
@@ -175,7 +189,9 @@ const Projects = () => {
                   rel="noreferrer"
                   className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
-                  <img
+                  <Image
+                    height={76}
+                    width={66}
                     src="/github.png"
                     alt="github.com"
                     className="h-1/2 w-1/2 object-contain"
@@ -187,7 +203,9 @@ const Projects = () => {
                   rel="noreferrer"
                   className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
-                  <img
+                  <Image
+                    height={76}
+                    width={66}
                     src="/url.png"
                     alt="Live preview"
                     className="h-1/2 w-1/2 object-contain"
@@ -235,10 +253,12 @@ const Projects = () => {
           >
             <div className="rounded-[10px] bg-purple-900 p-4 sm:p-6">
               <div className="relative">
-                <img
+                <Image
+                  height={176}
+                  width={206}
                   alt="E-commerce"
                   src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1679497986/samples/ecommerce/Screen_Shot_2023-03-22_at_18.12.54_vykkmh.png"
-                  className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:purplescale-[50%]"
+                  className="group-hover:purplescale-[50%] h-44 w-full rounded-xl object-cover shadow-xl transition"
                 />
                 <a
                   href="https://github.com/Hunter-7010/crwn-clothing"
@@ -246,7 +266,9 @@ const Projects = () => {
                   rel="noreferrer"
                   className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
-                  <img
+                  <Image
+                    height={76}
+                    width={66}
                     src="/github.png"
                     alt="github.com"
                     className="h-1/2 w-1/2 object-contain"
@@ -258,7 +280,9 @@ const Projects = () => {
                   rel="noreferrer"
                   className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
-                  <img
+                  <Image
+                    height={76}
+                    width={66}
                     src="/url.png"
                     alt="Live preview"
                     className="h-1/2 w-1/2 object-contain"
@@ -303,10 +327,12 @@ const Projects = () => {
           >
             <div className="rounded-[10px] bg-purple-900 p-4 sm:p-6">
               <div className="relative">
-                <img
+                <Image
+                  height={176}
+                  width={206}
                   alt="MaxFood"
                   src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1673520472/samples/ecommerce/Screen_Shot_2023-01-12_at_13.44.51_vwgld5.png"
-                  className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:purplescale-[50%]"
+                  className="group-hover:purplescale-[50%] h-44 w-full rounded-xl object-cover shadow-xl transition"
                 />
                 <a
                   href="https://github.com/Hunter-7010/max-food"
@@ -314,7 +340,9 @@ const Projects = () => {
                   rel="noreferrer"
                   className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
-                  <img
+                  <Image
+                    height={76}
+                    width={66}
                     src="/github.png"
                     alt="github.com"
                     className="h-1/2 w-1/2 object-contain"
@@ -326,7 +354,9 @@ const Projects = () => {
                   rel="noreferrer"
                   className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
                 >
-                  <img
+                  <Image
+                    height={76}
+                    width={66}
                     src="/url.png"
                     alt="Live preview"
                     className="h-1/2 w-1/2 object-contain"

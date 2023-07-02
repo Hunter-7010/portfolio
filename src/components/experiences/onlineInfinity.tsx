@@ -1,5 +1,5 @@
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
-
+import Image from "next/image";
 const OnlineInfinity = () => {
   return (
     <VerticalTimelineElement
@@ -12,7 +12,8 @@ const OnlineInfinity = () => {
       // iconStyle={{ background: experience.iconBg }}
       icon={
         <div className="flex h-full w-full items-center justify-center">
-          <img
+          <Image
+            layout="fill"
             src="/onlineInfinity.jpeg"
             alt="Online Infinity"
             className="h-[100%] w-[100%] rounded-full object-contain"
@@ -22,28 +23,28 @@ const OnlineInfinity = () => {
     >
       <div>
         <h3 className="text-[24px] font-bold text-white">
-         Full-Stack Developer
+          Full-Stack Developer
         </h3>
         <p
           className="text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
-         Online Infinity
+          Online Infinity
         </p>
       </div>
 
       <ul className="mt-5 ml-5 list-disc space-y-2">
-        <li className="text-white pl-1 text-[14px] tracking-wider">
+        <li className="pl-1 text-[14px] tracking-wider text-white">
           Assist in the development and maintenance of the company&apos;s
           website.
         </li>
-        <li className="text-white pl-1 text-[14px] tracking-wider">
+        <li className="pl-1 text-[14px] tracking-wider text-white">
           Devloping unique animations with Framer-motion and GSAP.
         </li>
-        <li className="text-white pl-1 text-[14px] tracking-wider">
+        <li className="pl-1 text-[14px] tracking-wider text-white">
           Speeding up the development process.
         </li>
-        <li className="text-white pl-1 text-[14px] tracking-wider">
+        <li className="pl-1 text-[14px] tracking-wider text-white">
           Solving problems with responsive design and libraries.
         </li>
       </ul>

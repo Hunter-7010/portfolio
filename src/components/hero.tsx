@@ -31,11 +31,6 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen w-full">
       <div className="relative">
-        {/* <img
-          src="/macbook.png"
-          className="absolute top-64 md:bottom-0 md:right-0 md:top-0 md:h-[42rem]"
-          alt="macbook"
-        /> */}
         <Lottie
           animationData={animationData}
           loop={true}

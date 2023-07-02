@@ -1,5 +1,5 @@
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
-
+import Image from "next/image";
 const MaxFood = () => {
     return (
       <VerticalTimelineElement
@@ -13,7 +13,8 @@ const MaxFood = () => {
         // iconStyle={{ background: experience.iconBg }}
         icon={
           <div className="flex h-full w-full items-center justify-center">
-            <img
+            <Image
+            layout="fill"
               src="/maxfood.jpeg"
               alt="Maxfood"
               className="h-[100%] w-[100%] rounded-full object-contain"

@@ -2,6 +2,7 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import StarWrapper from "../hoc/SectionWrapper";
+import Image from "next/image"
 const About = () => {
   return (
     <section className="px-2 text-white min-h-screen" id="about">
@@ -28,7 +29,7 @@ const About = () => {
             className="animate-border rounded-xl bg-gradient-to-r from-purple-600 via-blue-50 to-purple-900 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
           >
             <div className="flex min-h-[280px] flex-col items-center justify-evenly rounded-[10px] p-4 sm:p-6">
-              <img src="web.png" alt="web image" className="h-16 w-16" />
+              <Image  width={64} height={64} src="/web.png" alt="web image" />
               <h3 className="mt-6 text-lg font-bold">Web Developer</h3>
             </div>
           </motion.div>
@@ -39,7 +40,7 @@ const About = () => {
             className="animate-border rounded-xl bg-gradient-to-r from-purple-600 via-blue-50 to-purple-900 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
           >
             <div className="flex min-h-[280px] flex-col items-center justify-evenly rounded-[10px] p-4 sm:p-6">
-              <img src="backend.png" alt="web image" className="h-16 w-16" />
+              <Image  width={64} height={64} src="/backend.png" alt="web image"  />
               <h3 className="mt-6 text-lg font-bold">Backend Developer</h3>
             </div>
           </motion.div>
@@ -50,7 +51,7 @@ const About = () => {
             className="animate-border rounded-xl bg-gradient-to-r from-purple-600 via-blue-50 to-purple-900 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
           >
             <div className="flex min-h-[280px] flex-col items-center justify-evenly rounded-[10px] p-4 sm:p-6">
-              <img src="innovation.png" alt="web image" className="h-16 w-16" />
+              <Image  width={64} height={64} src="/innovation.png" alt="web image"  />
               <h3 className="mt-6 text-lg font-bold">technology enthusiast</h3>
             </div>
           </motion.div>
