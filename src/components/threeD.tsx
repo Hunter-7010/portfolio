@@ -60,7 +60,7 @@ export default function ThreeD() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-[45rem] transform overflow-hidden rounded-2xl p-6 text-left align-middle shadow-xl transition-all bg-[#101212]">
+                <Dialog.Panel className="w-[45rem] transform overflow-hidden rounded-2xl p-6 text-left align-middle shadow-xl transition-all bg-[#512785]">
                   <Dialog.Title
                     as="h3"
                     className="text-lg font-medium leading-6"

@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="dark relative overflow-hidden scroll-smooth bg-gradient-to-t from-[#101212] to-[#08201D] text-white">
+      <section className="dark relative overflow-hidden scroll-smooth bg-gradient-to-t from-[#512785] to-[#2A1445] text-white">
         <Navbar />
         <Hero />
         <About />

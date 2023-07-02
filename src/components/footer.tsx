@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="py-6 sm:flex sm:flex-row-reverse sm:items-center sm:justify-between sm:px-24">
-      <p className="text-center text-sm text-gray-500 sm:text-left">
+      <p className="text-center text-sm text-purple-500 sm:text-left">
         Copyright &copy; 2023. All rights reserved.
       </p>
       <ul className="mt-4 flex justify-center gap-6 sm:mt-0 sm:justify-start">
@@ -10,7 +10,7 @@ const Footer = () => {
             href="https://www.facebook.com/ZakiOriakhail"
             rel="noreferrer"
             target="_blank"
-            className="text-teal-700 transition hover:text-teal-700/75"
+            className="text-purple-500 transition hover:text-purple-500/75"
           >
             <span className="sr-only">Facebook</span>
             <svg
@@ -32,7 +32,7 @@ const Footer = () => {
             href="https://www.instagram.com/zakiorya/"
             target="_blank"
             rel="noreferrer"
-            className="text-teal-700 transition hover:text-teal-700/75"
+            className="text-purple-500 transition hover:text-purple-500/75"
           >
             <span className="sr-only">Instagram</span>
             <svg
@@ -54,7 +54,7 @@ const Footer = () => {
             href="https://twitter.com/ZakiOrya"
             rel="noreferrer"
             target="_blank"
-            className="text-teal-700 transition hover:text-teal-700/75"
+            className="text-purple-500 transition hover:text-purple-500/75"
           >
             <span className="sr-only">Twitter</span>
             <svg
@@ -73,7 +73,7 @@ const Footer = () => {
             href="https://github.com/Hunter-7010"
             target="_blank"
             rel="noreferrer"
-            className="text-teal-700 transition hover:text-teal-700/75"
+            className="text-purple-500 transition hover:text-purple-500/75"
           >
             <span className="sr-only">GitHub</span>
             <svg
@@ -95,7 +95,7 @@ const Footer = () => {
             href="https://dribbble.com/Zaki_Orya"
             rel="noreferrer"
             target="_blank"
-            className="text-teal-700 transition hover:text-teal-700/75"
+            className="text-purple-500 transition hover:text-purple-500/75"
           >
             <span className="sr-only">Dribbble</span>
             <svg
@@ -116,7 +116,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/zaki-orya/"
             rel="noreferrer"
             target="_blank"
-            className="text-teal-700 transition hover:text-teal-700/75"
+            className="text-purple-500 transition hover:text-purple-500/75"
           >
             <span className="sr-only">Linkedin</span>
             <svg

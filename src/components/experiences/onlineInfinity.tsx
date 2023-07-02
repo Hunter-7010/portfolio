@@ -4,7 +4,7 @@ const OnlineInfinity = () => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        backgroundImage: "linear-gradient(to right, #101212, #08201D)",
+        backgroundImage: "linear-gradient(to right, #512785, #2A1445)",
         color: "#fff",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}

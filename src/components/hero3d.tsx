@@ -6,7 +6,7 @@ const Hero3d = () => {
     <div className="absolute top-[121px] z-20 mx-auto max-w-7xl pl-12">
       <div className="mx-auto max-w-xl">
         <h1 className="text-4xl font-bold sm:text-6xl">
-          <span className="bg-gradient-to-r from-green-300 to-white bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-purple-300 to-white bg-clip-text text-transparent">
             {" "}
            Hi, I&apos;m Zaki Orya{" "}
           </span>

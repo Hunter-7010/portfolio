@@ -52,7 +52,7 @@ const Contact = () => {
     <section className="flex min-h-screen flex-col-reverse py-6 lg:flex-row">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="mx-0 rounded-2xl border py-8 px-4 dark:bg-gradient-to-l dark:from-[#101212] dark:to-[#08201D] md:m-0 lg:w-[448px] lg:py-16"
+        className="mx-0 rounded-2xl border py-8 px-4 dark:bg-gradient-to-l dark:from-[#512785] dark:to-[#2A1445] md:m-0 lg:w-[448px] lg:py-16"
       >
         <h2 className="mb-4 text-center text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           Contact Me
@@ -76,7 +76,7 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm focus:border-emerald-500 focus:ring-emerald-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:shadow-sm dark:focus:border-emerald-500 dark:focus:ring-emerald-500"
+              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm focus:border-violet-500 focus:ring-violet-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:shadow-sm dark:focus:border-violet-500 dark:focus:ring-violet-500"
               placeholder="Provide Your Name"
               required
             />
@@ -94,7 +94,7 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
-              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-emerald-500 focus:ring-emerald-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:shadow-sm dark:focus:border-emerald-500 dark:focus:ring-emerald-500"
+              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-violet-500 focus:ring-violet-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:shadow-sm dark:focus:border-violet-500 dark:focus:ring-violet-500"
               placeholder="name@gmail.com"
               required
             />
@@ -111,14 +111,14 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
-              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-emerald-500 focus:ring-emerald-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-emerald-500 dark:focus:ring-emerald-500"
+              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-violet-500 focus:ring-violet-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-violet-500 dark:focus:ring-violet-500"
               placeholder="Leave a message..."
               id="message"
             ></textarea>
           </div>
           <button
             type="submit"
-            className="rounded-lg bg-emerald-700 py-3 px-5 text-center text-sm font-medium text-white hover:bg-emerald-800 focus:outline-none focus:ring-4 focus:ring-emerald-300 dark:bg-emerald-600 dark:hover:bg-emerald-700 dark:focus:ring-emerald-800 sm:w-fit"
+            className="rounded-lg bg-violet-700 py-3 px-5 text-center text-sm font-medium text-white hover:bg-violet-800 focus:outline-none focus:ring-4 focus:ring-violet-300 dark:bg-violet-600 dark:hover:bg-violet-700 dark:focus:ring-violet-800 sm:w-fit"
           >
             {loading ? "Sending..." : " Send message"}
           </button>

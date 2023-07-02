@@ -7,7 +7,7 @@ const StarWrapper = (Component:any, idName: string) =>
         variants={staggerContainer(0, 0)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once:false}}
+        viewport={{ once:true}}
         className={`relative z-0 mx-auto max-w-7xl`}
       >
         <span className="hash-span" id={idName}>

@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <h1 className="flex items-center">
           <img src="/mylogo.png" alt="" className="h-10 w-10" />
-          <span className="self-center whitespace-nowrap text-xl font-bold dark:text-teal-50">
+          <span className="self-center whitespace-nowrap text-xl font-bold dark:text-fuchsia-50">
             aki Orya
           </span>
         </h1>
@@ -43,7 +43,7 @@ const Navbar = () => {
         <div
           className={`${open ? "block" : "hidden"} w-full md:block md:w-auto`}
         >
-          <ul className="mt-4 flex flex-col rounded-lg border p-4 dark:border-gray-700 dark:bg-gradient-to-l dark:from-[#101212] dark:to-[#08201D] md:mt-0 md:flex-row md:space-x-8 md:border-0 md:text-sm md:font-medium md:dark:from-transparent">
+          <ul className="mt-4 flex flex-col rounded-lg border p-4 dark:border-gray-700 dark:bg-gradient-to-l dark:from-[#512785] dark:to-[#2A1445] md:mt-0 md:flex-row md:space-x-8 md:border-0 md:text-sm md:font-medium md:dark:from-transparent">
             <li>
               <Link
                 activeClass="active"

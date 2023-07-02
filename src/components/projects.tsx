@@ -24,14 +24,14 @@ const Projects = () => {
         <Tilt className="m-2 w-full sm:w-[350px]">
           <motion.article
             variants={fadeIn("right", "spring", 0.5 * 0, 2.5)}
-            className="group rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
+            className="group rounded-xl bg-gradient-to-r from-purple-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
           >
-            <div className="rounded-[10px] bg-gray-900 p-4 sm:p-6">
+            <div className="rounded-[10px] bg-purple-900 p-4 sm:p-6">
               <div className="relative">
                 <img
                   alt="Maxfood website"
                   src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1679495725/samples/ecommerce/Screen_Shot_2023-03-22_at_17.35.01_zgh1fa.png"
-                  className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+                  className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:purplescale-[50%]"
                 />
                 <a className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90">
                   <img
@@ -59,7 +59,7 @@ const Projects = () => {
                   <h3 className="text-lg font-medium text-white">Maxfood</h3>
                 </a>
 
-                <p className="mt-2 text-sm leading-relaxed text-gray-400 ">
+                <p className="mt-2 text-sm leading-relaxed text-purple-400">
                   This website has a user-friendly interface for customers to
                   browse products and make purchases. It also has an admin
                   portal for managing orders, inventory, and shipping,
@@ -70,10 +70,10 @@ const Projects = () => {
                   Typescript
                 </span>
 
-                <span className="whitespace-nowrap rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-600">
+                <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
                   Next.js
                 </span>
-                <span className="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-xs text-green-600">
+                <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
                   Mongodb
                 </span>
                 <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-fuchsia-500 via-blue-500 to-violet-600 px-2.5 py-0.5 text-xs text-white antialiased">
@@ -86,14 +86,14 @@ const Projects = () => {
         <Tilt className="m-2 w-full sm:w-[350px]">
           <motion.article
             variants={fadeIn("right", "spring", 0.5 * 1.5, 2.5)}
-            className="group rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
+            className="group rounded-xl bg-gradient-to-r from-purple-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
           >
-            <div className="rounded-[10px] bg-gray-900 p-4 sm:p-6">
+            <div className="rounded-[10px] bg-purple-900 p-4 sm:p-6">
               <div className="relative">
                 <img
                   alt="Yelp Camps"
                   src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1681036206/samples/ecommerce/Screen_Shot_2023-04-09_at_1.28.45_PM_p8dtn5.png"
-                  className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+                  className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:purplescale-[50%]"
                 />
                 <a
                   href="https://github.com/Hunter-7010/yelpcampV3"
@@ -126,7 +126,7 @@ const Projects = () => {
                   <h3 className="text-lg font-medium text-white">YelpCamp</h3>
                 </a>
 
-                <p className="mt-2 text-sm leading-relaxed text-gray-400 ">
+                <p className="mt-2 text-sm leading-relaxed text-purple-400">
                   Lets users share and rate campgrounds they have visited, with
                   an interactive interface for easy navigation. It provides
                   valuable insights and recommendations for other campers
@@ -138,10 +138,10 @@ const Projects = () => {
                   Typescript
                 </span>
 
-                <span className="whitespace-nowrap rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-600">
+                <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
                   Next.js
                 </span>
-                <span className="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-xs text-green-600">
+                <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
                   Mongodb
                 </span>
                 <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-fuchsia-500 via-blue-500 to-violet-600 px-2.5 py-0.5 text-xs text-white antialiased">
@@ -150,7 +150,7 @@ const Projects = () => {
                 <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-blue-400 px-2.5 py-0.5 text-xs text-white antialiased">
                   TRPC
                 </span>
-                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-gray-900 via-gray-500 to-gray-400 px-2.5 py-0.5 text-xs text-white antialiased">
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-purple-900 via-purple-500 to-purple-400 px-2.5 py-0.5 text-xs text-white antialiased">
                   Prisma
                 </span>
               </div>
@@ -160,14 +160,14 @@ const Projects = () => {
         <Tilt className="m-2 w-full sm:w-[350px]">
           <motion.article
             variants={fadeIn("right", "spring", 0.5 * 0.5, 2.5)}
-            className="group rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
+            className="group rounded-xl bg-gradient-to-r from-purple-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
           >
-            <div className="rounded-[10px] bg-gray-900 p-4 sm:p-6">
+            <div className="rounded-[10px] bg-purple-900 p-4 sm:p-6">
               <div className="relative">
                 <img
                   alt="Kanban website"
                   src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1679498944/samples/ecommerce/Screen_Shot_2023-03-22_at_18.29.00_nxhmmd.png"
-                  className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+                  className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:purplescale-[50%]"
                 />
                 <a
                   href="https://github.com/Hunter-7010/kanban"
@@ -200,7 +200,7 @@ const Projects = () => {
                   <h3 className="text-lg font-medium text-white">Kanban</h3>
                 </a>
 
-                <p className="mt-2 text-sm leading-relaxed text-gray-400 ">
+                <p className="mt-2 text-sm leading-relaxed text-purple-400">
                   Allows users to easily manage daily tasks by adding and
                   categorizing to-do lists. The intuitive interface allows for
                   quick task prioritization and completion.
@@ -211,10 +211,10 @@ const Projects = () => {
                   Typescript
                 </span>
 
-                <span className="whitespace-nowrap rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-600">
+                <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
                   Next.js
                 </span>
-                <span className="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-xs text-green-600">
+                <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
                   Mongodb
                 </span>
                 <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-fuchsia-500 via-blue-500 to-violet-600 px-2.5 py-0.5 text-xs text-white antialiased">
@@ -231,14 +231,14 @@ const Projects = () => {
         <Tilt className="m-2 w-full sm:w-[350px]">
           <motion.article
             variants={fadeIn("right", "spring", 0.5 * 1, 2.5)}
-            className="group rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
+            className="group rounded-xl bg-gradient-to-r from-purple-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
           >
-            <div className="rounded-[10px] bg-gray-900 p-4 sm:p-6">
+            <div className="rounded-[10px] bg-purple-900 p-4 sm:p-6">
               <div className="relative">
                 <img
                   alt="E-commerce"
                   src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1679497986/samples/ecommerce/Screen_Shot_2023-03-22_at_18.12.54_vykkmh.png"
-                  className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+                  className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:purplescale-[50%]"
                 />
                 <a
                   href="https://github.com/Hunter-7010/crwn-clothing"
@@ -273,7 +273,7 @@ const Projects = () => {
                   </h3>
                 </a>
 
-                <p className="mt-2 text-sm leading-relaxed text-gray-400 ">
+                <p className="mt-2 text-sm leading-relaxed text-purple-400">
                   This e-commerce website was created using Create-React-App,
                   Firebase, and SCSS. It features a modern and responsive
                   design.
@@ -299,14 +299,14 @@ const Projects = () => {
         <Tilt className="m-2 w-full sm:w-[350px]">
           <motion.article
             variants={fadeIn("right", "spring", 0.5 * 2, 2.5)}
-            className="group rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-green-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
+            className="group rounded-xl bg-gradient-to-r from-purple-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
           >
-            <div className="rounded-[10px] bg-gray-900 p-4 sm:p-6">
+            <div className="rounded-[10px] bg-purple-900 p-4 sm:p-6">
               <div className="relative">
                 <img
                   alt="MaxFood"
                   src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1673520472/samples/ecommerce/Screen_Shot_2023-01-12_at_13.44.51_vwgld5.png"
-                  className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+                  className="h-44 w-full rounded-xl object-cover shadow-xl transition group-hover:purplescale-[50%]"
                 />
                 <a
                   href="https://github.com/Hunter-7010/max-food"
@@ -339,7 +339,7 @@ const Projects = () => {
                   <h3 className="text-lg font-medium text-white">MaxFood</h3>
                 </a>
 
-                <p className="mt-2 text-sm leading-relaxed text-gray-400 ">
+                <p className="mt-2 text-sm leading-relaxed text-purple-400">
                   This was my first website, featuring an admin portal for
                   managing orders, inventory, shipping, and invoicing. Since
                   then, I have developed an improved version with enhanced
@@ -351,13 +351,13 @@ const Projects = () => {
                   Javascript
                 </span>
 
-                <span className="whitespace-nowrap rounded-full bg-green-500 px-2.5 py-0.5 text-xs text-white">
+                <span className="whitespace-nowrap rounded-full bg-purple-500 px-2.5 py-0.5 text-xs text-white">
                   Node.js
                 </span>
-                <span className="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-xs text-green-600">
+                <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
                   Mongodb
                 </span>
-                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-yellow-500 via-green-500 to-blue-600 px-2.5 py-0.5 text-xs text-white antialiased">
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-yellow-500 via-purple-500 to-blue-600 px-2.5 py-0.5 text-xs text-white antialiased">
                   Passport.js
                 </span>
                 <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-blue-500 to-white px-2.5 py-0.5 text-xs text-black antialiased">

@@ -2,7 +2,12 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 // import ThreeD from "./threeD";
 import { Link } from "react-scroll";
+import Lottie, { LottieRefCurrentProps } from "lottie-react";
+import animationData from "../assets/lottie/laptop.json";
+import { useRef } from "react";
+
 const Hero = () => {
+  const laptopRef = useRef<LottieRefCurrentProps>(null);
   const [text] = useTypewriter({
     words: [
       "I develope Web applications",
@@ -26,16 +31,22 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen w-full">
       <div className="relative">
-        <img
+        {/* <img
           src="/macbook.png"
           className="absolute top-64 md:bottom-0 md:right-0 md:top-0 md:h-[42rem]"
           alt="macbook"
+        /> */}
+        <Lottie
+          animationData={animationData}
+          loop={true}
+          lottieRef={laptopRef}
+          className="absolute top-[4rem] right-1/2 w-[40rem] md:scale-150 translate-x-1/2 md:bottom-0 md:right-0 md:top-0 md:h-[42rem] md:w-[45rem] md:translate-x-0"
         />
       </div>
       <div className="absolute top-[121px] z-20 mx-auto max-w-7xl pl-12">
         <div className="mx-auto max-w-xl">
           <h1 className="text-4xl font-bold sm:text-6xl">
-            <span className="bg-gradient-to-r from-green-300 to-white bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-300 to-white bg-clip-text text-transparent">
               {" "}
               Hi, I&apos;m Zaki Orya{" "}
             </span>
