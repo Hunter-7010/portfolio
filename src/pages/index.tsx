@@ -1,5 +1,6 @@
 import { type NextPage } from "next";
 import { NextSeo } from "next-seo";
+import Head from "next/head";
 import Navbar from "../components/navbar";
 import Hero from "../components/hero";
 import About from "../components/about";
@@ -15,8 +16,11 @@ const Home: NextPage = () => {
 
   return (
     <>
+    <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <NextSeo
-      title="Zaki Orya's Portofolio"
+      title="Zaki Orya"
       description="This Portofolio is created using nextjs, react three fiber, three.js, framer motion and tailwind."
       canonical="https://zakiorya.vercel.app/"
       openGraph={{
