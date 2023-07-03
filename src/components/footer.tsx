@@ -1,5 +1,8 @@
+import { SocialProfileJsonLd } from 'next-seo';
+
 const Footer = () => {
   return (
+    <>
     <footer className="py-6 sm:flex sm:flex-row-reverse sm:items-center sm:justify-between sm:px-24">
       <p className="text-center text-sm text-purple-500 sm:text-left">
         Copyright &copy; 2023. All rights reserved.
@@ -131,6 +134,19 @@ const Footer = () => {
         </li>
       </ul>
     </footer>
+    <SocialProfileJsonLd
+      type="Person"
+      name="Zaki Orya"
+      url="https://zakiorya.vercel.app/"
+      sameAs={[
+        'https://www.facebook.com/ZakiOriakhail',
+        'https://www.instagram.com/zakiorya',
+        'https://www.linkedin.com/in/zaki-orya',
+        'https://twitter.com/ZakiOrya',
+        'https://dribbble.com/Zaki_Orya'
+      ]}
+    />
+    </>
   );
 };
 

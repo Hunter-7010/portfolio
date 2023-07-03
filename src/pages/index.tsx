@@ -1,7 +1,5 @@
 import { type NextPage } from "next";
 import { NextSeo } from "next-seo";
-
-import Head from "next/head";
 import Navbar from "../components/navbar";
 import Hero from "../components/hero";
 import About from "../components/about";
@@ -39,6 +37,15 @@ const Home: NextPage = () => {
       twitter={{
         handle: '@ZakiOrya',
         cardType: 'https://res.cloudinary.com/dcajz16bn/image/upload/v1688406602/Screen_Shot_2023-07-03_at_8.49.11_PM_s0ccts.png',
+      }}
+      robotsProps={{
+        nosnippet: true,
+        notranslate: true,
+        noimageindex: true,
+        noarchive: true,
+        maxSnippet: -1,
+        maxImagePreview: 'none',
+        maxVideoPreview: -1,
       }}
       
     />
