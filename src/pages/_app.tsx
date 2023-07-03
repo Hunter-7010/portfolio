@@ -14,7 +14,6 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         src="https://umamianalytics.netlify.app/script.js"
         data-website-id="b8f70fb5-5a7c-4231-a4ca-65c92d7454df"
       />
-
       <Component {...pageProps} />
       <Analytics />
     </>
