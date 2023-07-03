@@ -17,17 +17,6 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>Zaki Orya</title>
-        <meta name="description" content="Zaki Orya's Portofolio" key="desc" />
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta
-          name="description"
-          content="This Portofolio is created using nextjs, react three fiber, three.js, framer motion and tailwind"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <NextSeo
       title="Zaki Orya's Portofolio"
       description="This Portofolio is created using nextjs, react three fiber, three.js, framer motion and tailwind."
