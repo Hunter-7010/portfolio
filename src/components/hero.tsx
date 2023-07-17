@@ -29,7 +29,7 @@ const Hero = () => {
     delaySpeed: 1500,
   });
   return (
-    <section className="relative min-h-screen w-full">
+    <section className="relative h-screen w-full">
       <div className="relative">
         <Lottie
           animationData={animationData}
