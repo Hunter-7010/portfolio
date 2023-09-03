@@ -14,19 +14,19 @@ import TawkTo from "../components/Tawk";
 import Skills from "../components/skills";
 import Footer from "../components/footer";
 const Home: NextPage = () => {
-  const physics = { damping: 120, stiffness: 700 };
-  const mouseX = useMotionValue(0);
-  const mouseXSpring = useSpring(mouseX);
-  const mouseY = useMotionValue(0);
-  const mouseYSpring = useSpring(mouseY);
-  const circleRadius = useMotionValue(64);
-  const circleRadiusSpring = useSpring(circleRadius);
+  // const physics = { damping: 120, stiffness: 700 };
+  // const mouseX = useMotionValue(0);
+  // const mouseXSpring = useSpring(mouseX);
+  // const mouseY = useMotionValue(0);
+  // const mouseYSpring = useSpring(mouseY);
+  // const circleRadius = useMotionValue(64);
+  // const circleRadiusSpring = useSpring(circleRadius);
 
-  function handleMouseMove({ currentTarget, clientX, clientY }: MouseEvent) {
-    const { left, top } = currentTarget.getBoundingClientRect();
-    mouseX.set(clientX - left - circleRadius.get() / 2);
-    mouseY.set(clientY - top - circleRadius.get() / 2);
-  }
+  // function handleMouseMove({ currentTarget, clientX, clientY }: MouseEvent) {
+  //   const { left, top } = currentTarget.getBoundingClientRect();
+  //   mouseX.set(clientX - left - circleRadius.get() / 2);
+  //   mouseY.set(clientY - top - circleRadius.get() / 2);
+  // }
   return (
     <>
       <Head>
@@ -68,7 +68,7 @@ const Home: NextPage = () => {
         }}
       />
       <section className="dark cursor-n relative overflow-hidden scroll-smooth bg-gradient-to-t from-[#2A1445] to-[#512785] text-white">
-        <motion.div
+        {/* <motion.div
           onMouseMove={handleMouseMove}
           className="fixed inset-0 h-screen w-screen z-[100]"
         >
@@ -81,7 +81,7 @@ const Home: NextPage = () => {
             }}
             className="fixed top-0 left-0 flex items-center justify-center rounded-full border-2 border-dashed border-purple-500 backdrop-saturate-200"
           />
-        </motion.div>
+        </motion.div> */}
         <Navbar />
         <Hero />
         <About />
