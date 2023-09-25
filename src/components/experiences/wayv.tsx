@@ -42,7 +42,7 @@ const WayvAgency = () => {
           Collaborate with team members, and maintain code repositories.
         </li>
         <li className="pl-1 text-[14px] tracking-wider text-white">
-          Identify and fix bugs and issues in the website's codebase to ensure a
+          Identify and fix bugs and issues in the website&apos;s codebase to ensure a
           smooth and error-free user experience.
         </li>
         <li className="pl-1 text-[14px] tracking-wider text-white">
