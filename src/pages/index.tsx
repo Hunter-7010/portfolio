@@ -29,13 +29,14 @@ const Home: NextPage = () => {
   //   mouseX.set(clientX - left - circleRadius.get() / 2);
   //   mouseY.set(clientY - top - circleRadius.get() / 2);
   // }
+  const physics = { damping: 20, stiffness: 300,mass:0.5 };
   const mouse = {
     x: useMotionValue(0),
     y: useMotionValue(0),
   };
   const mouseSpring={
-    x: useSpring(mouse.x),
-    y: useSpring(mouse.y),
+    x: useSpring(mouse.x,physics),
+    y: useSpring(mouse.y,physics),
   }
   const manageMouseMove = (e: MouseEvent) => {
     const { clientX, clientY } = e;

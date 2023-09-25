@@ -68,7 +68,7 @@ const Projects = () => {
                 </a>
 
                 <p className="mt-2 text-sm leading-relaxed text-purple-400">
-                  The agency's newly completed website stands out with its
+                  The agency&apos;s newly completed website stands out with its
                   exceptional functionality and captivating animations, setting
                   a new standard in the industry.
                 </p>
