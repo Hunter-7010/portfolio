@@ -20,8 +20,8 @@ const Skills = () => {
             <Image
             width={92}
             height={50}
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
-              src="/nextjs.png"
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+              src="/nextjs.svg"
               alt="Nextjs"
             />
             <div className="absolute inset-0 opacity-0 group-hover:opacity-80 duration-300 ease-in-out group-hover:bg-white h-28 w-28 rounded-full">
@@ -34,7 +34,7 @@ const Skills = () => {
             <Image
             width={92}
             height={50}
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
               src="/typescript.png"
               alt="Typescript"
             />
@@ -48,7 +48,7 @@ const Skills = () => {
             <Image
             width={92}
             height={50}
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
               src="/javascript.png"
               alt="Javascript"
             />
@@ -62,8 +62,8 @@ const Skills = () => {
             <Image
             width={92}
             height={50}
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
-              src="/mongodb.png"
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+              src="/mongodb.svg"
               alt="Mongodb"
             />
             <div className="absolute inset-0 opacity-0 group-hover:opacity-80 duration-300 ease-in-out group-hover:bg-white h-28 w-28 rounded-full">
@@ -76,8 +76,8 @@ const Skills = () => {
             <Image
             width={92}
             height={50}
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
-              src="/react.png"
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+              src="/react.svg"
               alt="React"
             />
             <div className="absolute inset-0 opacity-0 group-hover:opacity-80 duration-300 ease-in-out group-hover:bg-white h-28 w-28 rounded-full">
@@ -90,7 +90,7 @@ const Skills = () => {
             <Image
             width={92}
             height={50}
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
               src="/nextauth.png"
               alt="NextAuth"
             />
@@ -104,7 +104,7 @@ const Skills = () => {
             <Image
             width={92}
             height={50}
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
               src="/prisma.png"
               alt="Prisma"
             />
@@ -118,8 +118,8 @@ const Skills = () => {
             <Image
             width={92}
             height={50}
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
-              src="/python.png"
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+              src="/python.svg"
               alt="python"
             />
             <div className="absolute inset-0 opacity-0 group-hover:opacity-80 duration-300 ease-in-out group-hover:bg-white h-28 w-28 rounded-full">
@@ -132,8 +132,8 @@ const Skills = () => {
             <Image
             width={92}
             height={50}
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
-              src="/tailwind.png"
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-contain object-center"
+              src="/tailwindcss.svg"
               alt="tailwind"
             />
             <div className="absolute inset-0 opacity-0 group-hover:opacity-80 duration-300 ease-in-out group-hover:bg-white h-28 w-28 rounded-full">
@@ -146,7 +146,7 @@ const Skills = () => {
             <Image
             width={92}
             height={50}
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
               src="/html.png"
               alt="html"
             />
@@ -160,7 +160,7 @@ const Skills = () => {
             <Image
             width={92}
             height={50}
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
               src="/css.png"
               alt="css"
             />
@@ -174,8 +174,8 @@ const Skills = () => {
             <Image
             width={92}
             height={50}
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
-              src="/trpc.png"
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
+              src="/trpc.svg"
               alt="Trpc"
             />
             <div className="absolute inset-0 opacity-0 group-hover:opacity-80 duration-300 ease-in-out group-hover:bg-white h-28 w-28 rounded-full">
@@ -188,7 +188,7 @@ const Skills = () => {
             <Image
             width={92}
             height={50}
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
               src="/nodejs.png"
               alt="Nodejs"
             />
@@ -202,7 +202,7 @@ const Skills = () => {
             <Image
             width={92}
             height={50}
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover object-center"
               src="/express.png"
               alt="Express"
             />
@@ -216,8 +216,8 @@ const Skills = () => {
             <Image
             width={92}
             height={50}
-              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-cover"
-              src="/threejs.png"
+              className="h-28 w-28 rounded-full p-1 ring-4 ring-gray-300 dark:ring-gray-500 dark:bg-violet-400 filter group-hover:grayscale duration-300 ease-in-out object-contain object-center"
+              src="/threejs.svg"
               alt="ThreeJS"
             />
             <div className="absolute inset-0 opacity-0 group-hover:opacity-80 duration-300 ease-in-out group-hover:bg-white h-28 w-28 rounded-full">

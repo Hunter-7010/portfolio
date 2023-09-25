@@ -1,6 +1,7 @@
 import { type NextPage } from "next";
+import { useEffect } from "react";
 import { NextSeo } from "next-seo";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import { motion, useMotionValue,useSpring } from "framer-motion";
 import { MouseEvent } from "react";
 import Head from "next/head";
 import Navbar from "../components/navbar";
@@ -13,6 +14,7 @@ import Contact from "../components/contact";
 import TawkTo from "../components/Tawk";
 import Skills from "../components/skills";
 import Footer from "../components/footer";
+import { Toaster } from "react-hot-toast";
 const Home: NextPage = () => {
   // const physics = { damping: 120, stiffness: 700 };
   // const mouseX = useMotionValue(0);
@@ -27,6 +29,33 @@ const Home: NextPage = () => {
   //   mouseX.set(clientX - left - circleRadius.get() / 2);
   //   mouseY.set(clientY - top - circleRadius.get() / 2);
   // }
+  const mouse = {
+    x: useMotionValue(0),
+    y: useMotionValue(0),
+  };
+  const mouseSpring={
+    x: useSpring(mouse.x),
+    y: useSpring(mouse.y),
+  }
+  const manageMouseMove = (e: MouseEvent) => {
+    const { clientX, clientY } = e;
+    mouse.x.set(clientX - 20);
+    mouse.y.set(clientY - 20);
+  };
+
+  useEffect(() => {
+    window.addEventListener(
+      "mousemove",
+      manageMouseMove as unknown as EventListener
+    );
+    return () => {
+      window.removeEventListener(
+        "mousemove",
+        manageMouseMove as unknown as EventListener
+      );
+    };
+  });
+
   return (
     <>
       <Head>
@@ -67,7 +96,7 @@ const Home: NextPage = () => {
           maxVideoPreview: -1,
         }}
       />
-      <section className="dark cursor-n relative overflow-hidden scroll-smooth bg-gradient-to-t from-[#2A1445] to-[#512785] text-white">
+      <section className="cursor-n dark relative overflow-hidden scroll-smooth bg-gradient-to-t from-[#2A1445] to-[#512785] text-white">
         {/* <motion.div
           onMouseMove={handleMouseMove}
           className="fixed inset-0 h-screen w-screen z-[100]"
@@ -82,6 +111,11 @@ const Home: NextPage = () => {
             className="fixed top-0 left-0 flex items-center justify-center rounded-full border-2 border-dashed border-purple-500 backdrop-saturate-200"
           />
         </motion.div> */}
+        <motion.div
+          style={{ left: mouseSpring.x, top: mouseSpring.y }}
+          className="pointer-events-none z-[10000] fixed h-10 w-10 rounded-full border-2 border-dashed border-purple-500 backdrop-saturate-200"
+        />
+        <Toaster />
         <Navbar />
         <Hero />
         <About />

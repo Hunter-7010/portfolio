@@ -31,6 +31,88 @@ const Projects = () => {
                 <Image
                   height={176}
                   width={206}
+                  alt="Wayv Agency website"
+                  src="https://res.cloudinary.com/dcajz16bn/image/upload/v1695637243/Screen_Shot_2023-09-25_at_1.20.32_PM_pojwq9.png"
+                  className="group-hover:purplescale-[50%] h-44 w-full rounded-xl object-cover shadow-xl transition"
+                />
+                <a className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90">
+                  <Image
+                    height={76}
+                    width={66}
+                    src="/github.png"
+                    alt="github.com"
+                    className="h-1/2 w-1/2 object-contain"
+                  />
+                </a>
+                <a
+                  href="https://wayv.agency/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
+                >
+                  <Image
+                    height={76}
+                    width={66}
+                    src="/url.png"
+                    alt="Live preview"
+                    className="h-1/2 w-1/2 object-contain"
+                  />
+                </a>
+              </div>
+
+              <div className="pt-4">
+                <a href="#">
+                  <h3 className="text-lg font-medium text-white">
+                    Wayv Agency
+                  </h3>
+                </a>
+
+                <p className="mt-2 text-sm leading-relaxed text-purple-400">
+                  The agency's newly completed website stands out with its
+                  exceptional functionality and captivating animations, setting
+                  a new standard in the industry.
+                </p>
+              </div>
+              <div className="mt-4 flex flex-wrap gap-1">
+                <span className="whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-xs text-blue-700">
+                  Strapi
+                </span>
+
+                <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                  Next.js
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                  SQL
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-fuchsia-500 via-blue-500 to-violet-600 px-2.5 py-0.5 text-xs text-white antialiased">
+                  Framer motion
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-xs text-green-600">
+                  GSAP
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-600">
+                  Jotai
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-blue-500 via-blue-300 to-blue-100 px-2.5 py-0.5 text-xs text-blue-800 antialiased">
+                  Tailwind
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-rose-300 via-rose-200 to-rose-100 px-2.5 py-0.5 text-xs text-rose-800 antialiased">
+                  Lenis
+                </span>
+              </div>
+            </div>
+          </motion.article>
+        </Tilt>
+        <Tilt className="m-2 w-full sm:w-[350px]">
+          <motion.article
+            variants={fadeIn("right", "spring", 0.5 * 0, 2.5)}
+            className="group rounded-xl bg-gradient-to-r from-purple-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
+          >
+            <div className="rounded-[10px] bg-purple-900 p-4 sm:p-6">
+              <div className="relative">
+                <Image
+                  height={176}
+                  width={206}
                   alt="Maxfood website"
                   src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1679495725/samples/ecommerce/Screen_Shot_2023-03-22_at_17.35.01_zgh1fa.png"
                   className="group-hover:purplescale-[50%] h-44 w-full rounded-xl object-cover shadow-xl transition"
@@ -84,6 +166,12 @@ const Projects = () => {
                 </span>
                 <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-fuchsia-500 via-blue-500 to-violet-600 px-2.5 py-0.5 text-xs text-white antialiased">
                   NextAuth
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-blue-400 px-2.5 py-0.5 text-xs text-white antialiased">
+                  TRPC
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-purple-900 via-purple-500 to-purple-400 px-2.5 py-0.5 text-xs text-white antialiased">
+                  Prisma
                 </span>
               </div>
             </div>
@@ -141,8 +229,8 @@ const Projects = () => {
                 <p className="mt-2 text-sm leading-relaxed text-purple-400">
                   Lets users share and rate campgrounds they have visited, with
                   an interactive interface for easy navigation. It provides
-                  valuable insights and recommendations for other campers
-                  planning their next outdoor adventure.
+                  valuable insights and recommendations for other campers.
+          
                 </p>
               </div>
               <div className="mt-4 flex flex-wrap gap-1">
@@ -300,7 +388,7 @@ const Projects = () => {
                 <p className="mt-2 text-sm leading-relaxed text-purple-400">
                   This e-commerce website was created using Create-React-App,
                   Firebase, and SCSS. It features a modern and responsive
-                  design.
+                  design and fast load time.
                 </p>
               </div>
               <div className="mt-4 flex flex-wrap gap-1">
@@ -314,6 +402,12 @@ const Projects = () => {
 
                 <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-fuchsia-500  to-pink-600 px-2.5 py-0.5 text-xs text-white antialiased">
                   SCSS
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-xs text-blue-600">
+                  CRA
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-violet-100 px-2.5 py-0.5 text-xs text-violet-600">
+                  React context
                 </span>
               </div>
             </div>
@@ -369,7 +463,7 @@ const Projects = () => {
                   <h3 className="text-lg font-medium text-white">MaxFood</h3>
                 </a>
 
-                <p className="mt-2 text-sm leading-relaxed text-purple-400">
+                <p className="mt-2 text-sm leading-relaxed text-purple-400 line-clamp-4">
                   This was my first website, featuring an admin portal for
                   managing orders, inventory, shipping, and invoicing. Since
                   then, I have developed an improved version with enhanced

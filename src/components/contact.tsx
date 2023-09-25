@@ -5,6 +5,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { StarsCanvas } from "./canvas";
+import { toast } from "react-hot-toast";
 //template_m7bfeqi
 //service_bdoaa7i
 //txHoftJzDvRd8_3Sm
@@ -24,8 +25,8 @@ const Contact = () => {
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     setLoading(true);
-    emailjs
-      .send(
+    void toast.promise(
+      emailjs.send(
         "service_bdoaa7i",
         "template_m7bfeqi",
         {
@@ -36,17 +37,51 @@ const Contact = () => {
           message: form.message,
         },
         "txHoftJzDvRd8_3Sm"
-      )
-      .then(() => {
-        setLoading(false);
-        alert("thank you i will get back to you!");
-        setForm({ name: "", email: "", message: "" });
-      })
-      .catch((e) => {
-        setLoading(false);
-        console.log("Error", e);
-        alert("Something went wrong");
-      });
+      ),
+      {
+        loading: "Loading",
+        success: () => {
+          setLoading(false);
+          setForm({ name: "", email: "", message: "" });
+          return "Email Sent Successfully";
+        },
+        error: () => {
+          setLoading(false);
+          return "Something went wrong";
+        },
+      },
+      {
+        style: {
+          minWidth: "250px",
+        },
+        success: {
+          duration: 5000,
+        },
+      }
+    );
+    // emailjs
+    //   .send(
+    //     "service_bdoaa7i",
+    //     "template_m7bfeqi",
+    //     {
+    //       from_name: form.name,
+    //       to_name: "Zaki Orya",
+    //       from_email: form.email,
+    //       to_email: "zakioria@gmail.com",
+    //       message: form.message,
+    //     },
+    //     "txHoftJzDvRd8_3Sm"
+    //   )
+    //   .then(() => {
+    //     setLoading(false);
+    //     alert("thank you i will get back to you!");
+    //     setForm({ name: "", email: "", message: "" });
+    //   })
+    //   .catch((e) => {
+    //     setLoading(false);
+    //     console.log("Error", e);
+    //     alert("Something went wrong");
+    //   });
   };
   return (
     <section className="flex min-h-screen flex-col-reverse py-6 lg:flex-row">
@@ -59,8 +94,8 @@ const Contact = () => {
         </h2>
         <p className="mb-8 text-center font-light text-gray-500 dark:text-gray-400 sm:text-xl lg:mb-16">
           Don&apos;t hesitate to reach out - whether it&apos;s for a potential
-          collaboration, to discuss a job opportunity, or just to say hello, I&apos;m
-          always happy to connect.
+          collaboration, to discuss a job opportunity, or just to say hello,
+          I&apos;m always happy to connect.
         </p>
         <form onSubmit={handleSubmit} className="space-y-8">
           <div>
