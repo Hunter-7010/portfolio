@@ -10,7 +10,11 @@ import "../styles/globals.css";
 const MyApp: AppType = ({ Component, pageProps }) => {
   //smooth scroll
   useEffect(() => {
-    const lenis = new Lenis({lerp: 0.05,touchMultiplier:1 });
+    const lenis = new Lenis({
+      lerp: 0.05,
+      smoothWheel: true,
+      smoothTouch: true,
+    });
 
     function raf(time: number) {
       lenis.raf(time);
