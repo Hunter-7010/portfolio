@@ -13,7 +13,6 @@ const MyApp: AppType = ({ Component, pageProps }) => {
     const lenis = new Lenis({
       lerp: 0.05,
       smoothWheel: true,
-      smoothTouch: true,
     });
 
     function raf(time: number) {
