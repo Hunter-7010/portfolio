@@ -32,6 +32,71 @@ const Projects = () => {
                   height={176}
                   width={206}
                   alt="Wayv Agency website"
+                  src="https://res.cloudinary.com/dcajz16bn/image/upload/v1710448680/Screenshot_2024-03-14_at_11.37.27_PM_o9j2dv.png"
+                  className="group-hover:purplescale-[50%] h-44 w-full rounded-xl object-cover shadow-xl transition"
+                />
+
+                <a
+                  href="https://lashthing.nl"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="absolute top-2 right-2 z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
+                >
+                  <Image
+                    height={76}
+                    width={66}
+                    src="/url.png"
+                    alt="Live preview"
+                    className="h-1/2 w-1/2 object-contain"
+                  />
+                </a>
+              </div>
+
+              <div className="pt-4">
+                <a href="#">
+                  <h3 className="text-lg font-medium text-white">Lashthing</h3>
+                </a>
+
+                <p className="mt-2 text-sm leading-relaxed text-purple-400">
+                  {`A headless e-commerce platform using Next.js 14 and Shopify integration. Leveraging Next.js for front-end flexibility and Shopify's robust backend.`}
+                </p>
+              </div>
+              <div className="mt-4 flex flex-wrap gap-1">
+                <span className="whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-xs text-blue-700">
+                  Shopify
+                </span>
+
+                <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                  Next.js
+                </span>
+
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-fuchsia-500 via-blue-500 to-violet-600 px-2.5 py-0.5 text-xs text-white antialiased">
+                  Framer motion
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-pink-100 px-2.5 py-0.5 text-xs text-pink-600">
+                  Graphql
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-blue-500 via-blue-300 to-blue-100 px-2.5 py-0.5 text-xs text-blue-800 antialiased">
+                  Tailwind
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-gray-300 via-gray-200 to-gray-100 px-2.5 py-0.5 text-xs text-gray-800 antialiased">
+                  Shadcn
+                </span>
+              </div>
+            </div>
+          </motion.article>
+        </Tilt>
+        <Tilt className="m-2 w-full sm:w-[350px]">
+          <motion.article
+            variants={fadeIn("right", "spring", 0.5 * 0, 2.5)}
+            className="group rounded-xl bg-gradient-to-r from-purple-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
+          >
+            <div className="rounded-[10px] bg-purple-900 p-4 sm:p-6">
+              <div className="relative">
+                <Image
+                  height={176}
+                  width={206}
+                  alt="Wayv Agency website"
                   src="https://res.cloudinary.com/dcajz16bn/image/upload/v1695637243/Screen_Shot_2023-09-25_at_1.20.32_PM_pojwq9.png"
                   className="group-hover:purplescale-[50%] h-44 w-full rounded-xl object-cover shadow-xl transition"
                 />
@@ -230,7 +295,6 @@ const Projects = () => {
                   Lets users share and rate campgrounds they have visited, with
                   an interactive interface for easy navigation. It provides
                   valuable insights and recommendations for other campers.
-          
                 </p>
               </div>
               <div className="mt-4 flex flex-wrap gap-1">
@@ -334,163 +398,6 @@ const Projects = () => {
           </motion.article>
         </Tilt>
 
-        <Tilt className="m-2 w-full sm:w-[350px]">
-          <motion.article
-            variants={fadeIn("right", "spring", 0.5 * 1, 2.5)}
-            className="group rounded-xl bg-gradient-to-r from-purple-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
-          >
-            <div className="rounded-[10px] bg-purple-900 p-4 sm:p-6">
-              <div className="relative">
-                <Image
-                  height={176}
-                  width={206}
-                  alt="E-commerce"
-                  src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1679497986/samples/ecommerce/Screen_Shot_2023-03-22_at_18.12.54_vykkmh.png"
-                  className="group-hover:purplescale-[50%] h-44 w-full rounded-xl object-cover shadow-xl transition"
-                />
-                <a
-                  href="https://github.com/Hunter-7010/crwn-clothing"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
-                >
-                  <Image
-                    height={76}
-                    width={66}
-                    src="/github.png"
-                    alt="github.com"
-                    className="h-1/2 w-1/2 object-contain"
-                  />
-                </a>
-                <a
-                  href="https://stirring-cendol-393ef5.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
-                >
-                  <Image
-                    height={76}
-                    width={66}
-                    src="/url.png"
-                    alt="Live preview"
-                    className="h-1/2 w-1/2 object-contain"
-                  />
-                </a>
-              </div>
-
-              <div className="pt-4">
-                <a href="#">
-                  <h3 className="text-lg font-medium text-white">
-                    Crwn-Clothing
-                  </h3>
-                </a>
-
-                <p className="mt-2 text-sm leading-relaxed text-purple-400">
-                  This e-commerce website was created using Create-React-App,
-                  Firebase, and SCSS. It features a modern and responsive
-                  design and fast load time.
-                </p>
-              </div>
-              <div className="mt-4 flex flex-wrap gap-1">
-                <span className="whitespace-nowrap rounded-full bg-cyan-100 px-2.5 py-0.5 text-xs text-cyan-600">
-                  React
-                </span>
-
-                <span className="whitespace-nowrap rounded-full bg-orange-100 px-2.5 py-0.5 text-xs text-orange-600">
-                  Firebase
-                </span>
-
-                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-fuchsia-500  to-pink-600 px-2.5 py-0.5 text-xs text-white antialiased">
-                  SCSS
-                </span>
-                <span className="whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-xs text-blue-600">
-                  CRA
-                </span>
-                <span className="whitespace-nowrap rounded-full bg-violet-100 px-2.5 py-0.5 text-xs text-violet-600">
-                  React context
-                </span>
-              </div>
-            </div>
-          </motion.article>
-        </Tilt>
-
-        <Tilt className="m-2 w-full sm:w-[350px]">
-          <motion.article
-            variants={fadeIn("right", "spring", 0.5 * 2, 2.5)}
-            className="group rounded-xl bg-gradient-to-r from-purple-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
-          >
-            <div className="rounded-[10px] bg-purple-900 p-4 sm:p-6">
-              <div className="relative">
-                <Image
-                  height={176}
-                  width={206}
-                  alt="MaxFood"
-                  src="https://res.cloudinary.com/dddvtrxcz/image/upload/v1673520472/samples/ecommerce/Screen_Shot_2023-01-12_at_13.44.51_vwgld5.png"
-                  className="group-hover:purplescale-[50%] h-44 w-full rounded-xl object-cover shadow-xl transition"
-                />
-                <a
-                  href="https://github.com/Hunter-7010/max-food"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="absolute top-2 right-2  z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
-                >
-                  <Image
-                    height={76}
-                    width={66}
-                    src="/github.png"
-                    alt="github.com"
-                    className="h-1/2 w-1/2 object-contain"
-                  />
-                </a>
-                <a
-                  href="https://maxfood.up.railway.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="absolute top-2 right-[52px] z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
-                >
-                  <Image
-                    height={76}
-                    width={66}
-                    src="/url.png"
-                    alt="Live preview"
-                    className="h-1/2 w-1/2 object-contain"
-                  />
-                </a>
-              </div>
-
-              <div className="pt-4">
-                <a href="#">
-                  <h3 className="text-lg font-medium text-white">MaxFood</h3>
-                </a>
-
-                <p className="mt-2 text-sm leading-relaxed text-purple-400 line-clamp-4">
-                  This was my first website, featuring an admin portal for
-                  managing orders, inventory, shipping, and invoicing. Since
-                  then, I have developed an improved version with enhanced
-                  functionality and a more modern design.
-                </p>
-              </div>
-              <div className="mt-4 flex flex-wrap gap-1">
-                <span className="whitespace-nowrap rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs text-yellow-600">
-                  Javascript
-                </span>
-
-                <span className="whitespace-nowrap rounded-full bg-purple-500 px-2.5 py-0.5 text-xs text-white">
-                  Node.js
-                </span>
-                <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
-                  Mongodb
-                </span>
-                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-yellow-500 via-purple-500 to-blue-600 px-2.5 py-0.5 text-xs text-white antialiased">
-                  Passport.js
-                </span>
-                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-blue-500 to-white px-2.5 py-0.5 text-xs text-black antialiased">
-                  Hope UI
-                </span>
-              </div>
-            </div>
-          </motion.article>
-        </Tilt>
       </div>
     </section>
   );

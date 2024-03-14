@@ -125,7 +125,7 @@ const Home: NextPage = () => {
         <Projects />
         <Contact />
         <Footer />
-        <TawkTo />
+        {/* <TawkTo /> */}
       </section>
     </>
   );
