@@ -26,8 +26,8 @@ const MyApp: AppType = ({ Component, pageProps }) => {
     <>
       <Script
         async
-        src="https://umamianalytics.netlify.app/script.js"
-        data-website-id="b8f70fb5-5a7c-4231-a4ca-65c92d7454df"
+        src="https://analytics.zass.agency/script.js"
+        data-website-id="ffec22ad-a127-4180-823f-4157f26a6863"
       />
       <Component {...pageProps} />
       <Analytics />
