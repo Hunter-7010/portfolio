@@ -31,6 +31,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.1",
+    "react-icon-cloud": "^4.1.4",
     "react-parallax-tilt": "^1.7.112",
     "react-scroll": "^1.8.9",
     "react-simple-typewriter": "^5.0.1",
