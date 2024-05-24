@@ -1,20 +1,18 @@
+import { motion, useMotionValue, useSpring } from "framer-motion";
 import { type NextPage } from "next";
-import { useEffect } from "react";
 import { NextSeo } from "next-seo";
-import { motion, useMotionValue,useSpring } from "framer-motion";
-import { MouseEvent } from "react";
 import Head from "next/head";
-import Navbar from "../components/navbar";
-import Hero from "../components/hero";
+import { MouseEvent, useEffect } from "react";
 import About from "../components/about";
+import Hero from "../components/hero";
+import Navbar from "../components/navbar";
 // import { api } from "../utils/api";
-import Experience from "../components/Experience";
-import Projects from "../components/projects";
-import Contact from "../components/contact";
-import TawkTo from "../components/Tawk";
-import Skills from "../components/skills";
-import Footer from "../components/footer";
 import { Toaster } from "react-hot-toast";
+import Contact from "../components/contact";
+import Experience from "../components/Experience";
+import Footer from "../components/footer";
+import Projects from "../components/projects";
+import Skills from "../components/skills";
 const Home: NextPage = () => {
   // const physics = { damping: 120, stiffness: 700 };
   // const mouseX = useMotionValue(0);
@@ -97,7 +95,7 @@ const Home: NextPage = () => {
           maxVideoPreview: -1,
         }}
       />
-      <section className="cursor-n dark relative overflow-hidden scroll-smooth bg-gradient-to-t from-[#2A1445] to-[#512785] text-white">
+      <section className="dark relative overflow-hidden scroll-smooth bg-gradient-to-t from-[#2A1445] to-[#512785] text-white max-lg:px-5">
         {/* <motion.div
           onMouseMove={handleMouseMove}
           className="fixed inset-0 h-screen w-screen z-[100]"

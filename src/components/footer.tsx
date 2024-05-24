@@ -5,7 +5,7 @@ const Footer = () => {
     <>
     <footer className="py-6 sm:flex sm:flex-row-reverse sm:items-center sm:justify-between sm:px-24">
       <p className="text-center text-sm text-purple-500 sm:text-left">
-        Copyright &copy; 2023. All rights reserved.
+        Copyright &copy; {new Date().getFullYear()}. All rights reserved.
       </p>
       <ul className="mt-4 flex justify-center gap-6 sm:mt-0 sm:justify-start">
         <li>

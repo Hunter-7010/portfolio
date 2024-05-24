@@ -8,10 +8,7 @@ const Skills = () => {
       <motion.div variants={textVariant(0)}>
         <h2 className="text-5xl font-black">Skills</h2>
       </motion.div>
-      <motion.p
-        variants={textVariant(0.8)}
-        className="hidden opacity-70 md:block"
-      >
+      <motion.p variants={textVariant(0.8)} className="block opacity-70">
         Hover over to view proficiency.
       </motion.p>
       <div className="flex w-full items-center justify-center">
@@ -48,7 +45,7 @@ const Skills = () => {
             "strapi",
             "expo",
             "prismic",
-            "greensock"
+            "greensock",
           ]}
         />
       </div>
