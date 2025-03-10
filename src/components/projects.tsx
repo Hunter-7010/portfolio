@@ -1,8 +1,8 @@
-import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-import { textVariant, fadeIn } from "../utils/motion";
-import { SectionWrapper } from "../hoc";
 import Image from "next/image";
+import Tilt from "react-parallax-tilt";
+import { SectionWrapper } from "../hoc";
+import { fadeIn, textVariant } from "../utils/motion";
 const Projects = () => {
   return (
     <section className="min-h-screen p-2">
@@ -21,6 +21,71 @@ const Projects = () => {
         for solving complex problems.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
+      <Tilt className="m-2 w-full sm:w-[350px]">
+          <motion.article
+            variants={fadeIn("right", "spring", 0.5 * 0, 2.5)}
+            className="group rounded-xl bg-gradient-to-r from-purple-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-[3px] shadow-xl hover:shadow-sm"
+          >
+            <div className="rounded-[10px] bg-purple-900 p-4 sm:p-6">
+              <div className="relative">
+                <Image
+                  height={176}
+                  width={206}
+                  alt="Bird"
+                  src="/bird.jpg"
+                  className="group-hover:purplescale-[50%] h-44 w-full rounded-xl object-cover shadow-xl transition"
+                />
+
+                <a
+                  href="https://bird-rotterdam.nl"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="absolute top-2 right-2 z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white hover:opacity-90"
+                >
+                  <Image
+                    height={76}
+                    width={66}
+                    src="/url.png"
+                    alt="Live preview"
+                    className="h-1/2 w-1/2 object-contain"
+                  />
+                </a>
+              </div>
+
+              <div className="pt-4">
+                <a href="#">
+                  <h3 className="text-lg font-medium text-white">BIRD Rotterdam</h3>
+                </a>
+
+                <p className="mt-2 text-sm leading-relaxed text-purple-400">
+                  {`Website for a Bustling establishment featuring live music, international cuisine & a bar, plus a terrace.`}
+                </p>
+              </div>
+              <div className="mt-4 flex flex-wrap gap-1">
+                <span className="whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-xs text-blue-700">
+                  Prismic
+                </span>
+
+                <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                  Next.js
+                </span>
+
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-fuchsia-500 via-blue-500 to-violet-600 px-2.5 py-0.5 text-xs text-white antialiased">
+                  Framer motion
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-pink-100 px-2.5 py-0.5 text-xs text-pink-600">
+                  Graphql
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-blue-500 via-blue-300 to-blue-100 px-2.5 py-0.5 text-xs text-blue-800 antialiased">
+                  Tailwind
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-neutral-300 via-neutral-200 to-neutral-100 px-2.5 py-0.5 text-xs text-neutral-800 antialiased">
+                  HeroUi
+                </span>
+              </div>
+            </div>
+          </motion.article>
+        </Tilt>
         <Tilt className="m-2 w-full sm:w-[350px]">
           <motion.article
             variants={fadeIn("right", "spring", 0.5 * 0, 2.5)}
